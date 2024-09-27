@@ -1,0 +1,134 @@
+
+ /* Type
+ -------------------------------------------------- */
+ 
+ /* based on footer-p */
+ h1, h2, h3, h4, h5, h6, p {
+    font-family: "ministry", "helvetica neue", sans-serif;
+    font-style: normal;
+  }
+  
+  p,
+  p .tsb-body {
+    color: #000;
+    font-weight: 300 !important;
+    letter-spacing: .07em;
+    line-height: 175%;
+  }
+  
+  /* .tsb-h1 {
+    font-weight: 700;
+    letter-spacing: -.025em;
+  } */
+  
+  .tsb-h1 {
+    font-weight: 500;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    line-height: 175%;
+    margin-bottom: 0px;
+  }
+  
+  .tsb-h2,
+  .tsb-h3,
+  .tsb-h4,
+  .tsb-h5,
+  .tsb-h6 {
+    font-family: "ministry","helvetica neue", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    line-height: 175%;
+  }
+  
+  
+  
+  @media (max-width: 991px) {
+      p,
+      p a,
+      .tsb-h1,
+      .tsb-h2,
+      .tsb-h3,
+      .tsb-figure-caption,
+      .tsb-figure-caption a {
+        font-size: .6rem;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      p,
+      p a,
+      .tsb-h1,
+      .tsb-h2,
+      .tsb-h3,
+      .tsb-figure-caption,
+      .tsb-figure-caption a {
+      font-size: .7rem;
+    }
+  }
+  
+  .tsb-body a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+    padding: 0 1px 1px 1px;
+  }
+  
+  .tsb-body a:hover,
+  .tsb-body a:active {
+    font-style: italic;
+    color: #800300;
+    border-bottom-color: #800300;
+    text-decoration: none;
+  }
+  
+  .tsb-body.city {
+    font-style: italic;
+    /* opacity:.7; */
+ 
+    /* font-family: "ministry","helvetica neue", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    line-height: 175%; */
+  }
+ 
+  .tsb-figure {
+    margin: 35px 0;
+  }
+  
+  .tsb-figure-caption {
+    margin-top: 15px;
+  }
+  
+  
+  .tsb-figure-caption,
+  .tsb-figure-caption a {
+    color: #000;
+    font-family: "ministry","helvetica neue", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    line-height: 175%;
+  }
+  
+  
+  .tsb-figure:hover,
+  .tsb-figure:active,
+  .tsb-figure a:hover,
+  .tsb-figure a:active,
+  .figure:hover .figure-caption,
+  .tsb-figure-caption:hover,
+  .tsb-figure-caption:active,
+  .tsb-figure-caption a:hover,
+  .tsb-figure-caption a:active {
+    color: #800300;
+    font-weight: 500;
+    font-style: italic !important;
+    text-decoration: none;
+  }
+  
