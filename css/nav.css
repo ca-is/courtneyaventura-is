@@ -3,6 +3,8 @@ header {
   }
 
 
+
+
 /* overwrite Bootstrap defaults 
 -------------------------------------------------- */
 .navbar-brand {
@@ -12,31 +14,44 @@ header {
 
 /* logos aligned to top
 -------------------------------------------------- */
-.logo-cdot-wrapper, 
-.logo-ca-wrapper {
+.nav-left-wrapper, 
+.nav-center-wrapper, 
+.nav-right-wrapper {
   cursor: pointer;
   z-index: 999999;
 }
 
 @media (max-width: 991px) {
-  .logo-cdot-wrapper, 
-  .logo-ca-wrapper {
+  .nav-left-wrapper, 
+  .nav-center-wrapper, 
+  .nav-right-wrapper {
     top: 25px;
   }
 }
 
 @media (min-width: 992px) {
-  .logo-cdot-wrapper, 
-  .logo-ca-wrapper {
+  .nav-left-wrapper, 
+  .nav-center-wrapper, 
+  .nav-right-wrapper {
     top: 25px;
   }
 }
 
 /* logos sized by height
 -------------------------------------------------- */
-@media (max-width: 991px) {
+@media (max-width: 576px) {
   .logo-cdot svg,
-  .logo-ca svg {
+  .logo-ca svg, 
+  .logo-is svg {
+    height: 20px;
+    width: auto;
+  }
+}
+
+@media and (max-width: 991px) {
+  .logo-cdot svg,
+  .logo-ca svg, 
+  .logo-is svg {
     height: 24px;
     width: auto;
   }
@@ -44,18 +59,19 @@ header {
 
 @media (min-width: 992px) {
   .logo-cdot svg,
-  .logo-ca svg {
+  .logo-ca svg, 
+  .logo-is svg {
     height: 24px;
     width: auto;
   }
 }
 
 
-/* logo-cdot-wrapper
+/* nav-left-wrapper
 -------------------------------------------------- */
 
 @media screen and (max-width: 400px) {
-  .logo-cdot-wrapper {
+  .nav-left-wrapper {
     position: fixed;
     left: calc(1 * (100% / 13));
     margin-left: 0;
@@ -63,7 +79,7 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  .logo-cdot-wrapper {
+  .nav-left-wrapper {
     position: fixed;
     left: calc(1 * (100% / 14));
     margin-left: 0;
@@ -71,7 +87,7 @@ header {
 }
 
 @media screen and (min-width: 576px) {
-  .logo-cdot-wrapper {
+  .nav-left-wrapper {
     position: fixed;
     left: calc(1 * (100% / 16));
   }
@@ -79,7 +95,7 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .logo-cdot-wrapper {
+  .nav-left-wrapper {
     position: fixed;
     left: calc(1 * (100% / 18));
   }
@@ -87,7 +103,7 @@ header {
 
 
 @media (min-width: 992px) {
-  .logo-cdot-wrapper {
+  .nav-left-wrapper {
     position: fixed;
     left: calc(1 * (100% / 11));
     /* padding-top: 8px;
@@ -96,7 +112,7 @@ header {
 }
 
 @media (min-width: 1200px) {
-  .logo-cdot-wrapper {
+  .nav-left-wrapper {
     position: fixed;
     left: calc(1 * (100% / 12));
     /* padding-top: 8px;
@@ -133,15 +149,15 @@ header {
 
   
   
-/* logo-ca-wrapper: courtney aventura
+/* nav-center-wrapper: courtney aventura
     center with absolute positioning
 -------------------------------------------------- */
-.logo-ca-wrapper {
+.nav-center-wrapper {
   position: fixed;
   width: 100%;
   left: 0;
   text-align: center;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 
@@ -164,40 +180,79 @@ header {
 }
 
 
+
   
-  
-/* header-right-wrapper:
+/* nav-right-wrapper:
     fixed right
 -------------------------------------------------- */
-.header-right-wrapper {
+.nav-right-wrapper {
   z-index: 99;
 }
 @media screen and (max-width: 575px) {
-  .header-right-wrapper  {
+  .nav-right-wrapper  {
     position: fixed;
     right: calc(1 * (100% / 13));
   }
 }
 
 @media screen and (min-width: 576px) {
-  .header-right-wrapper  {
+  .nav-right-wrapper  {
     position: fixed;
     right: calc(1 * (100% / 16));
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header-right-wrapper  {
+  .nav-right-wrapper  {
     position: fixed;
     right: calc(1 * (100% / 17));
   }
 }
 
 @media (min-width: 992px) {
-  .header-right-wrapper  {
+  .nav-right-wrapper  {
     position: fixed;
     right: calc(1 * (100% / 11));
   }
+}
+
+
+
+
+/* logo-is: courtney aventura is svg
+-------------------------------------------------- */
+
+/* Hide the second SVG initially */
+.logo-is svg:nth-child(2) {
+  display: none;
+}
+
+/* Show the second SVG on hover, hide the first */
+.logo-is:hover svg:nth-child(1) {
+  display: none;
+}
+
+.logo-is:hover svg:nth-child(2) {
+  display: inline;
+}
+
+
+
+/* logo-ca-is: courtney aventura is svg
+-------------------------------------------------- */
+
+/* Hide the second SVG initially */
+.logo-ca-is svg:nth-child(2) {
+  display: none;
+}
+
+/* Show the second SVG on hover, hide the first */
+.logo-ca-is:hover svg:nth-child(1) {
+  display: none;
+}
+
+.logo-ca-is:hover svg:nth-child(2) {
+  display: inline;
 }
   
   
@@ -205,49 +260,47 @@ header {
 /* Custom navbar-toggler:
   md and down
 -------------------------------------------------- */
-.tsb-toggler-btn {
+.ca-toggler-btn {
     position: fixed;
     /* top: 16px; */
     -webkit-transition: all .3s;
     transition: all .3s;
     /* margin: -15px 0 0 -15px; */
     /* right: 0; */
-    padding: 15px 0 15px 15px;
-    cursor: pointer;
+    /* padding: 15px 0 15px 15px; */
     border: none;
-    z-index: 999;
 }
 
 
-.tsb-toggler-btn:focus,
-.tsb-toggler-btn:active {
+.ca-toggler-btn:focus,
+.ca-toggler-btn:active {
     outline: none !important;
     box-shadow: none;
 }
 
 @media screen and (max-width: 575px) {
-  .tsb-toggler-btn  {
+  .ca-toggler-btn  {
     position: fixed;
     right: calc(1 * (100% / 13));
   }
 }
 
 @media screen and (min-width: 576px) {
-  .tsb-toggler-btn  {
+  .ca-toggler-btn  {
     position: fixed;
     right: calc(1 * (100% / 16));
   }
 }
 
 @media screen and (min-width: 768px) {
-  .tsb-toggler-btn  {
+  .ca-toggler-btn  {
     position: fixed;
     right: calc(1 * (100% / 17));
   }
 }
 
 @media (min-width: 992px) {
-  .tsb-toggler-btn  {
+  .ca-toggler-btn  {
     position: fixed;
     right: calc(1 * (100% / 10));
   }
@@ -298,15 +351,15 @@ header {
   
   /* navbar: title
   -------------------------------------------------- */
-  .logo-ca-wrapper,
-  .tsb-toggler,
-  .tsb-toggler,
+  .nav-center-wrapper,
+  .ca-toggler,
+  .ca-toggler,
   .tsb-nav-text,
   .tsb-nav-text a,
   .tsb-nav-item,
   .tsb-nav-item a,
   .tsb-dropdown-item,
-  .logo-ca-wrapper-overlay,
+  .nav-center-wrapper-overlay,
   .tsb-pagetitle,
   .closebtn,
   .openbtn {
@@ -319,15 +372,15 @@ header {
   }
   
   /* static buttons red */
-  .logo-ca-wrapper,
-  .tsb-toggler,
-  .tsb-toggler,
+  .nav-center-wrapper,
+  .ca-toggler,
+  .ca-toggler,
   .tsb-nav-text,
   .tsb-nav-text a,
   /* .tsb-nav-item, */
   /* .tsb-nav-item a, */
   /* .tsb-dropdown-item, */
-  .logo-ca-wrapper-overlay,
+  .nav-center-wrapper-overlay,
   .tsb-pagetitle,
   /* .closebtn, */
   .openbtn {
@@ -345,13 +398,13 @@ header {
   
   /* font size */
   @media (max-width: 991px) {
-      .logo-ca-wrapper,
-      .tsb-toggler,
+      .nav-center-wrapper,
+      .ca-toggler,
       .tsb-nav-text,
       .tsb-nav-text a,
       .tsb-nav-item,
       .tsb-dropdown-item,
-      .logo-ca-wrapper-overlay,
+      .nav-center-wrapper-overlay,
       .tsb-pagetitle,
       .closebtn,
       .openbtn {
@@ -360,13 +413,13 @@ header {
   }
   
   @media (min-width: 992px) {
-    .logo-ca-wrapper,
-    .tsb-toggler,
+    .nav-center-wrapper,
+    .ca-toggler,
     .tsb-nav-text,
     .tsb-nav-text a,
     .tsb-nav-item,
     .tsb-dropdown-item,
-    .logo-ca-wrapper-overlay,
+    .nav-center-wrapper-overlay,
     .tsb-pagetitle,
     .closebtn,
     .openbtn {
@@ -376,12 +429,12 @@ header {
   
   
   /* on hover and active */
-  .tsb-toggler:hover,
-  .tsb-toggler:active  a::after,
+  .ca-toggler:hover,
+  .ca-toggler:active  a::after,
   
-  .logo-ca-wrapper:hover,
-  .logo-ca-wrapper:active a::after,
-  .logo-ca-wrapper a:hover,
+  .nav-center-wrapper:hover,
+  .nav-center-wrapper:active a::after,
+  .nav-center-wrapper a:hover,
   
   .tsb-nav-text:hover,
   .tsb-nav-text:active  a::after,
@@ -416,7 +469,7 @@ header {
     padding-right: 0; */
   }
  
-  .logo-ca-wrapper-overlay .tsb-nav-item {
+  .nav-center-wrapper-overlay .tsb-nav-item {
    color: #800300 !important;
   }
  
@@ -430,8 +483,8 @@ header {
    text-decoration: none;
   }
   
-  .logo-ca-wrapper:hover,
-  .logo-ca-wrapper:active {
+  .nav-center-wrapper:hover,
+  .nav-center-wrapper:active {
     color: #800300 !important;
     font-family: "ministry","helvetica neue", sans-serif;
     font-style: italic;
@@ -501,8 +554,8 @@ header {
   
   /* navbar: nav-item hover states
   -------------------------------------------------- */
-  .tsb-toggler:hover,
-  .tsb-toggler:active  a::after,
+  .ca-toggler:hover,
+  .ca-toggler:active  a::after,
   
   .tsb-nav-item:hover,
   .tsb-nav-item:active  a::after,
@@ -576,7 +629,7 @@ header {
       display: none;
     }
   
-    .nav-overlay .logo-ca-wrapper-overlay {
+    .nav-overlay .nav-center-wrapper-overlay {
       position: absolute;
       top: 16px;
       padding: 15px 15px 15px 0;
@@ -614,7 +667,7 @@ header {
   
   
   @media screen and (max-width: 575px) {
-    .logo-ca-wrapper-overlay  {
+    .nav-center-wrapper-overlay  {
       left: calc(1 * (100% / 13));
     }
   
@@ -628,7 +681,7 @@ header {
   }
   
   @media screen and (min-width: 576px) {
-    .logo-ca-wrapper-overlay  {
+    .nav-center-wrapper-overlay  {
       left: calc(1 * (100% / 16));
     }
   
@@ -642,7 +695,7 @@ header {
   }
   
   @media screen and (min-width: 768px) {
-    .logo-ca-wrapper-overlay  {
+    .nav-center-wrapper-overlay  {
       left: calc(1 * (100% / 18));
     }
     .nav-overlay-content {
@@ -659,7 +712,7 @@ header {
     lg and up
   -------------------------------------------------- */
   @media (min-width: 992px) {
-    .logo-ca-wrapper-overlay {
+    .nav-center-wrapper-overlay {
       position: absolute;
       left: 50px;
       top: 16px;
