@@ -3,3 +3,97 @@ footer {
     padding: 30px 0 60px 0;
     display: block;
   }
+
+
+
+
+ /* Sticky footer
+ -------------------------------------------------- */
+ .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* background-color: white; */
+  z-index: 99999; 
+  /* Set the fixed height of the footer here */
+  /* height: 200px; */
+  /* line-height: px; /* Vertically center the text there */ 
+  /* background-color: #f5f5f5; */
+}
+
+
+
+@media (max-width: 991px) {
+  .tsb-footer {
+    margin-top: 50px;
+    /* padding-left: 18px;
+    padding-right: 18px; */
+  }
+}
+@media (min-width: 992px) {
+  .tsb-footer {
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: #fff;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+  }
+}
+
+.footer p,
+.footer-link,
+.footer-link a {
+  /* color: #800300 !important; */
+  color: #C8C8C8 !important;
+  font-family: "ministry","helvetica neue", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: .1em;
+  line-height: 175%;
+}
+
+@media (max-width: 991px) {
+    .footer p,
+    .footer-link,
+    .footer-link a {
+      font-size: .7rem;
+    }
+}
+
+@media (min-width: 992px) {
+  .footer p,
+  .footer-link,
+  .footer-link a {
+    font-size: .7rem;
+  }
+}
+
+.footernav-links {
+  margin-bottom: 25px;
+}
+.footernav-copyr {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.footer-link a,
+.footer-link a:hover {
+  cursor: pointer;
+}
+
+.footer-link.active,
+.footer-link a.active,
+.footer-link:hover,
+.footer-link:active  a::after {
+  color: #800300 !important;
+  font-family: "ministry","helvetica neue", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+  /* letter-spacing: .25em; */
+  /* text-transform: uppercase; */
+  /* border-bottom: 2px #800300 solid;
+  padding-bottom: 3px;
+  padding-left: 0;
+  padding-right: 0; */
+}
