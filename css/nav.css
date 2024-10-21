@@ -2,9 +2,6 @@ header {
     min-height: 66px;  
   }
 
-
-
-
 /* overwrite Bootstrap defaults 
 -------------------------------------------------- */
 .navbar-brand {
@@ -15,6 +12,8 @@ header {
 .navbar-toggler {
   padding: 0 !important;
   margin: 0 !important;
+  border: 0px !important;
+  border-image-width: 0 !important;
 }
 
 /* logos aligned to top
@@ -78,23 +77,18 @@ header {
 
 @media screen and (max-width: 400px) {
   .nav-left-wrapper {
-    /* position: fixed; */
     left: calc(1 * (100% / 13));
-    /* margin-left: 0; */
   }
 }
 
 @media screen and (max-width: 576px) {
   .nav-left-wrapper {
-    /* position: fixed; */
     left: calc(1 * (100% / 14));
-    /* margin-left: 0; */
   }
 }
 
 @media screen and (min-width: 576px) {
   .nav-left-wrapper {
-    /* position: fixed; */
     left: calc(1 * (100% / 16));
   }
 
@@ -102,7 +96,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .nav-left-wrapper {
-    /* position: fixed; */
     left: calc(1 * (100% / 18));
   }
 }
@@ -110,19 +103,13 @@ header {
 
 @media (min-width: 992px) {
   .nav-left-wrapper {
-    /* position: fixed; */
     left: calc(1 * (100% / 11));
-    /* padding-top: 8px;
-    padding-left: .55%; */
   }
 }
 
 @media (min-width: 1200px) {
   .nav-left-wrapper {
-    /* position: fixed; */
     left: calc(1 * (100% / 12));
-    /* padding-top: 8px;
-    padding-left: 1%; */
   }
 }
 
@@ -161,14 +148,6 @@ header {
 .nav-center-wrapper {
   left: 50%; /* Keep horizontally centered */
   transform: translateX(-50%); /* Only horizontally center the item */
-  /* position: fixed; */
-  /* top: 50%; */
-  /* left: 50%;
-  transform: translate(-50%, -50%); */
-  /* width: 100%;
-  left: 0;
-  text-align: center; */
-  /* z-index: 999; */
 }
 
 
@@ -196,39 +175,27 @@ header {
 /* nav-right-wrapper:
     fixed right
 -------------------------------------------------- */
-/* .nav-right-wrapper {
-  z-index: 99;
-} */
-
-.nav-right-wrapper {
-  width: auto;
-  height: auto;
-}
 
 @media screen and (max-width: 575px) {
   .nav-right-wrapper  {
-    position: fixed;
     right: calc(1 * (100% / 13));
   }
 }
 
 @media screen and (min-width: 576px) {
   .nav-right-wrapper  {
-    position: fixed;
     right: calc(1 * (100% / 16));
   }
 }
 
 @media screen and (min-width: 768px) {
   .nav-right-wrapper  {
-    position: fixed;
     right: calc(1 * (100% / 17));
   }
 }
 
 @media (min-width: 992px) {
   .nav-right-wrapper  {
-    position: fixed;
     right: calc(1 * (100% / 11));
   }
 }
@@ -315,24 +282,24 @@ header {
   md and down
 -------------------------------------------------- */
 .ca-toggler-btn {
-    position: fixed;
+    /* position: fixed; */
     /* top: 16px; */
     -webkit-transition: all .3s;
     transition: all .3s;
     /* margin: -15px 0 0 -15px; */
     /* right: 0; */
     /* padding: 15px 0 15px 15px; */
-    border: none;
+    /* border: none; */
 }
 
 
-.ca-toggler-btn:focus,
+/* .ca-toggler-btn:focus,
 .ca-toggler-btn:active {
     outline: none !important;
     box-shadow: none;
-}
+} */
 
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   .ca-toggler-btn  {
     position: fixed;
     right: calc(1 * (100% / 13));
@@ -358,7 +325,7 @@ header {
     position: fixed;
     right: calc(1 * (100% / 10));
   }
-}
+} */
   
 /* Custom navbar-toggler non-toggler (expand-lg):
    lg and up
@@ -386,9 +353,9 @@ header {
   
   /* navbar: title
   -------------------------------------------------- */
-  .nav-center-wrapper,
+  /* .nav-center-wrapper,
   .ca-toggler,
-  .ca-toggler,
+  .ca-toggler, */
   .tsb-nav-text,
   .tsb-nav-text a,
   .tsb-nav-item,
@@ -407,9 +374,8 @@ header {
   }
   
   /* static buttons red */
-  .nav-center-wrapper,
-  .ca-toggler,
-  .ca-toggler,
+  /* .nav-center-wrapper, */
+  /* .ca-toggler, */
   .tsb-nav-text,
   .tsb-nav-text a,
   /* .tsb-nav-item, */
@@ -433,8 +399,7 @@ header {
   
   /* font size */
   @media (max-width: 991px) {
-      .nav-center-wrapper,
-      .ca-toggler,
+      /* .ca-toggler, */
       .tsb-nav-text,
       .tsb-nav-text a,
       .tsb-nav-item,
@@ -448,8 +413,7 @@ header {
   }
   
   @media (min-width: 992px) {
-    .nav-center-wrapper,
-    .ca-toggler,
+    /* .ca-toggler, */
     .tsb-nav-text,
     .tsb-nav-text a,
     .tsb-nav-item,
@@ -467,9 +431,9 @@ header {
   .ca-toggler:hover,
   .ca-toggler:active  a::after,
   
-  .nav-center-wrapper:hover,
+  /* .nav-center-wrapper:hover,
   .nav-center-wrapper:active a::after,
-  .nav-center-wrapper a:hover,
+  .nav-center-wrapper a:hover, */
   
   .tsb-nav-text:hover,
   .tsb-nav-text:active  a::after,
@@ -621,9 +585,9 @@ header {
   @media (max-width: 991px) {
     .nav-overlay {
         height: 100%;
-        width: 0;
+        width: 0; /* Hidden by default */
         position: fixed;
-        z-index: 999999;
+        z-index: 1;
         top: 0;
         left: 0;
         background-color: rgb(255,255,255);

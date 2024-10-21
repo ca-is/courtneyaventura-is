@@ -18,7 +18,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/dcz2nul.css">
@@ -138,14 +141,14 @@
                       <!-- nav-right-wrapper -->
                       <div class="nav-right-wrapper">
 
-                            <!-- navbar-toggler -->
-                            <button id="navButton"
-                                class="navbar-toggler navbar-toggler-right navbar-light ca-toggler-btn"
-                                type="button" data-target="#navOverlay" aria-controls="navOverlay" aria-expanded="false" aria-label="Toggle navigation"
-                                onclick="openNav()" style="cursor: pointer;" >
+                            <!-- display md down -->
+                            <div class="d-block d-lg-none d-xl-none" >
 
-                                <!-- display md down -->
-                                <div class="d-block d-lg-none d-xl-none" >
+                                <!-- navbar-toggler -->
+                                <button id="navButton"
+                                    class="navbar-toggler navbar-toggler-right ca-toggler-btn navbar-light"
+                                    type="button" data-target="#navOverlay" aria-controls="navOverlay" aria-expanded="false" aria-label="Toggle navigation"
+                                    onclick="openNav()" style="cursor: pointer;" >
 
                                         <!-- logo-is -->
                                         <div class="logo-is ca-toggler">
@@ -162,8 +165,8 @@
                                             </svg>
                                         </div>
                                         
-                                </div>
-                            </button>
+                                </button>
+                            </div>
 
 
                             <!-- display lg up -->
@@ -221,7 +224,6 @@
                                     </svg>
                                 </div>
 
-                                <!-- <span class="nav-text ca-toggler">the &#123; space between &#125; is</span> -->
                             </div>
 
                       </div> <!-- nav-right-wrapper -->
@@ -232,97 +234,96 @@
             <!-- The overlay -->
             <div id="navOverlay" class="nav-overlay">
 
-            <!-- Overlay content -->
-            <div class="nav-overlay-content">
+                <!-- Overlay content -->
+                <div class="nav-overlay-content">
 
-                <!-- nav-text brand  -->
-                <!-- display md down -->
-                <div class="d-lg-none d-xl-none">
-                    <span class="nav-text text-left ca-title-wrapper-overlay">
-                        <a class="nav-item tsb-nav-item" href="index.html"> the &#123; space between &#125; is</a>
-                    </span>
-                </div>
-
-                <!-- display md down -->
-                <div class="d-lg-none ">
-                    <div class="ca-page-title">
-                    <span class="nav-text text-left">
-                        at Swank n&rsquo; Swine
-                    </span>
+                    <!-- nav-text brand  -->
+                    <!-- display md down -->
+                    <div class="d-lg-none d-xl-none">
+                        <span class="nav-text text-left ca-title-wrapper-overlay">
+                            <a class="nav-item tsb-nav-item" href="index.html"> the &#123; space between &#125; is</a>
+                        </span>
                     </div>
-                </div>
 
-                <!-- Button to close the overlay navigation -->
-                <!-- display md down -->
-                <div class="d-lg-none d-xl-none">
-                    <a href="javascript:void(0)" class="ca-toggler-btn closebtn " onclick="closeNav()" style="z-index:1;">
-                        <span>Close</span>
-                    </a>
-                </div>
+                    <!-- display md down -->
+                    <div class="d-lg-none ">
+                        <div class="ca-page-title">
+                        <span class="nav-text text-left">
+                            at Swank n&rsquo; Swine
+                        </span>
+                        </div>
+                    </div>
 
-                <div class="sidebar">
+                    <!-- Button to close the overlay navigation -->
+                    <!-- display md down -->
+                    <div class="d-lg-none d-xl-none">
+                        <a href="javascript:void(0)" class="ca-toggler-btn closebtn " onclick="closeNav()" style="z-index:1;">
+                            <span>Close</span>
+                        </a>
+                    </div>
 
-                        <div class="ml-auto ">
+                    <div class="sidebar">
 
-                            <ul class="nav navbar-nav menu-level-0 flex-column ">
-                            <li class="nav-item tsb-nav-item ">
-                                <a class="nav-link " href="securedbyspideroak.html">
-                                secured by SpiderOak
-                                </a>
-                            </li>
-                            </ul>
-                            
-                            <ul class="nav navbar-nav menu-level-1 flex-column ">
-                            <li class="nav-item tsb-nav-item  dropdown active ">
-                                <a class="nav-link dropdown-toggle tsb-dropdown-toggle active" href="#ss-title" id="ss-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                at Swank n&rsquo; Swine
-                                </a>
-                                <div class="dropdown-menu tsb-dropdown-menu ml-auto show" aria-labelledby="ss-dropdown">
-                                <a class="dropdown-item tsb-dropdown-item" href="#ss-swank">Restaurant Menus</a>
-                                <a class="dropdown-item tsb-dropdown-item" href="#ss-swine">Bar Menus</a>
-                                <a class="dropdown-item tsb-dropdown-item" href="#ss-web">Website</a>
-                                <a class="dropdown-item tsb-dropdown-item" href="#ss-photo">Gallery</a>
-                                </div>
-                            </li>
+                            <div class="ml-auto ">
 
-                            <li class="nav-item tsb-nav-item  ">
-                                <a class="nav-link " href="atcarlitas.html">
-                                at Carlita&rsquo;s
-                                </a>
-                            </li>
-
-                            <li class="nav-item tsb-nav-item  ">
-                                <a class="nav-link " href="atpearlcatering.html">
-                                at Pearl Catering
-                                </a>
-                            </li>
-
-                            <li class="nav-item tsb-nav-item  ">
-                                <a class="nav-link " href="atbartini.html">
-                                at Bartini
-                                </a>
-                            </li>
-
-
-                            </ul>
-
-                            <ul class="nav navbar-nav menu-level-2 flex-column">
-                            <li class="nav-item tsb-nav-item">
-                                <a class="nav-link" href="printed.html" >
-                                    Printed
-                                </a>
+                                <ul class="nav navbar-nav menu-level-0 flex-column ">
+                                <li class="nav-item tsb-nav-item ">
+                                    <a class="nav-link " href="securedbyspideroak.html">
+                                    secured by SpiderOak
+                                    </a>
+                                </li>
+                                </ul>
+                                
+                                <ul class="nav navbar-nav menu-level-1 flex-column ">
+                                <li class="nav-item tsb-nav-item  dropdown active ">
+                                    <a class="nav-link dropdown-toggle tsb-dropdown-toggle active" href="#ss-title" id="ss-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    at Swank n&rsquo; Swine
+                                    </a>
+                                    <div class="dropdown-menu tsb-dropdown-menu ml-auto show" aria-labelledby="ss-dropdown">
+                                    <a class="dropdown-item tsb-dropdown-item" href="#ss-swank">Restaurant Menus</a>
+                                    <a class="dropdown-item tsb-dropdown-item" href="#ss-swine">Bar Menus</a>
+                                    <a class="dropdown-item tsb-dropdown-item" href="#ss-web">Website</a>
+                                    <a class="dropdown-item tsb-dropdown-item" href="#ss-photo">Gallery</a>
+                                    </div>
                                 </li>
 
-                            </ul>
+                                <li class="nav-item tsb-nav-item  ">
+                                    <a class="nav-link " href="atcarlitas.html">
+                                    at Carlita&rsquo;s
+                                    </a>
+                                </li>
+
+                                <li class="nav-item tsb-nav-item  ">
+                                    <a class="nav-link " href="atpearlcatering.html">
+                                    at Pearl Catering
+                                    </a>
+                                </li>
+
+                                <li class="nav-item tsb-nav-item  ">
+                                    <a class="nav-link " href="atbartini.html">
+                                    at Bartini
+                                    </a>
+                                </li>
 
 
-                        </div><!-- ml-auto -->
-                </div><!-- sidebar -->
+                                </ul>
 
-            </div><!-- nav-overlay-content -->
+                                <ul class="nav navbar-nav menu-level-2 flex-column">
+                                <li class="nav-item tsb-nav-item">
+                                    <a class="nav-link" href="printed.html" >
+                                        Printed
+                                    </a>
+                                    </li>
+
+                                </ul>
+
+
+                            </div><!-- ml-auto -->
+                    </div><!-- sidebar -->
+
+                </div><!-- nav-overlay-content -->
 
             </div><!-- nav-overlay -->
-
 
         </nav>
       </header>
