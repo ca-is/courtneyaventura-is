@@ -43,13 +43,21 @@ html {
     min-height: 100%;
   }
   
-  body {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
+body {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
   
   /* section {
     overflow-x: hidden;
