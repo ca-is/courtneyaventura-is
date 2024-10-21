@@ -256,7 +256,44 @@ header {
 }
   
   
-  
+
+/* ca-page-title
+-------------------------------------------------- */
+.ca-page-title { 
+  position: fixed;
+}
+
+@media (max-width: 991px) {
+  .ca-page-title{
+    margin-top: 75px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .ca-page-title{
+    margin-top: 101px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ca-page-title{
+    top: 45px;
+    margin-top: 65px;
+
+    right: calc(1 * (100% / 11));
+    /* padding-top: 10px; */
+  }
+}
+
+.ca-page-title{
+  /* position: absolute; */
+  /* top:0; */
+  /* margin-bottom: 75px; */
+  /* visibility:hidden; */
+}
+
+
 /* Custom navbar-toggler:
   md and down
 -------------------------------------------------- */
@@ -316,11 +353,7 @@ header {
     z-index: 99;
   }
   
-  @media (max-width: 991px) {
-    .tsb-pagetitle {
-      margin-top: 75px;
-    }
-  }
+
   
   @media (min-width: 992px) {
     .openbtn {
@@ -329,24 +362,9 @@ header {
       right: calc(1 * (100% / 11));
       /* padding-top: 10px; */
     }
-  
-    .tsb-pagetitle {
-      margin-top: 101px;
-    }
   }
   
-  @media (min-width: 1200px) {
-    .tsb-pagetitle {
-      position: fixed;
-      top: 45px;
-      right: calc(1 * (100% / 11));
-      /* padding-top: 10px; */
-    }
-  
-    .tsb-pagetitle {
-      margin-top: 65px;
-    }
-  }
+ 
   
   
   /* navbar: title
@@ -636,7 +654,7 @@ header {
       /* margin-left: -10px; */
     }
   
-    .nav-overlay .tsb-pagetitle {
+    .nav-overlay {
       position: absolute;
       top:0;
       /* margin-bottom: 75px; */
