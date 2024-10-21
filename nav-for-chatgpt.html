@@ -1,0 +1,214 @@
+
+
+
+
+            
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .nav-overlay {
+        height: 100%;
+        width: 0; /* Hidden by default */
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(255,255,255);
+        background-color: rgba(255,255,255, 0.99);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+  
+    .nav-overlay-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+  
+    .nav-overlay a {
+        /* padding: 8px; */
+        text-decoration: none;
+        color: #800300;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .nav-overlay {
+      position: absolute;
+      top:0;
+      /* margin-bottom: 75px; */
+      visibility:hidden;
+    }
+  
+    .nav-overlay .closebtn {
+        position: absolute;
+        top: 16px;
+    }
+    .closebtn {
+        /* position: absolute; */
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        /* margin: 0 0 0 -15px; */
+        padding: 15px 0 15px 15px;
+        cursor: pointer;
+        border: none;
+        z-index: 99;
+    }
+</style>
+</head>
+<body>
+
+<!-- nav-right-wrapper -->
+<div class="nav-right-wrapper">
+
+    <!-- display md down -->
+    <div class="d-block d-lg-none d-xl-none" >
+
+        <!-- navbar-toggler -->
+        <button id="navButton"
+            class="navbar-toggler navbar-toggler-right ca-toggler-btn navbar-light"
+            type="button" data-target="#navOverlay" aria-controls="navOverlay" aria-expanded="false" aria-label="Toggle navigation"
+            onclick="openNav()" style="cursor: pointer;" >
+
+                <!-- logo-is -->
+                <span class="logo-is ca-toggler">
+                    <!-- First SVG (default) -->
+                    
+                    <!-- Second SVG (on hover) -->
+       
+                </span>
+                
+        </button>
+    </div>
+
+
+    <!-- display lg up -->
+    <div class="d-none d-lg-block d-xl-block">
+        <div class="logo-ca-is">
+            <!-- First SVG (default) -->
+            
+        
+            <!-- Second SVG (on hover) -->
+           
+        </div>
+
+    </div>
+
+</div> <!-- nav-right-wrapper -->
+
+</div> <!-- navbar-header -->
+
+
+<!-- The overlay -->
+<div id="navOverlay" class="nav-overlay">
+
+<!-- Overlay content -->
+<div class="nav-overlay-content">
+
+<!-- nav-text brand  -->
+<!-- display md down -->
+<div class="d-lg-none d-xl-none">
+<span class="nav-text text-left ca-title-wrapper-overlay">
+    <a class="nav-item tsb-nav-item" href="index.html"> the &#123; space between &#125; is</a>
+</span>
+</div>
+
+<!-- display md down -->
+<div class="d-lg-none ">
+<div class="ca-page-title">
+<span class="nav-text text-left">
+    at Swank n&rsquo; Swine
+</span>
+</div>
+</div>
+
+<!-- Button to close the overlay navigation -->
+<!-- display md down -->
+<div class="d-lg-none d-xl-none">
+<a href="javascript:void(0)" class="ca-toggler-btn closebtn " onclick="closeNav()" style="z-index:1;">
+    <span>Close</span>
+</a>
+</div>
+
+<div class="sidebar">
+
+    <div class="ml-auto ">
+
+        <ul class="nav navbar-nav menu-level-0 flex-column ">
+        <li class="nav-item tsb-nav-item ">
+            <a class="nav-link " href="securedbyspideroak.html">
+            secured by SpiderOak
+            </a>
+        </li>
+        </ul>
+        
+        <ul class="nav navbar-nav menu-level-1 flex-column ">
+        <li class="nav-item tsb-nav-item  dropdown active ">
+            <a class="nav-link dropdown-toggle tsb-dropdown-toggle active" href="#ss-title" id="ss-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            at Swank n&rsquo; Swine
+            </a>
+            <div class="dropdown-menu tsb-dropdown-menu ml-auto show" aria-labelledby="ss-dropdown">
+            <a class="dropdown-item tsb-dropdown-item" href="#ss-swank">Restaurant Menus</a>
+            <a class="dropdown-item tsb-dropdown-item" href="#ss-swine">Bar Menus</a>
+            <a class="dropdown-item tsb-dropdown-item" href="#ss-web">Website</a>
+            <a class="dropdown-item tsb-dropdown-item" href="#ss-photo">Gallery</a>
+            </div>
+        </li>
+
+        <li class="nav-item tsb-nav-item  ">
+            <a class="nav-link " href="atcarlitas.html">
+            at Carlita&rsquo;s
+            </a>
+        </li>
+
+        <li class="nav-item tsb-nav-item  ">
+            <a class="nav-link " href="atpearlcatering.html">
+            at Pearl Catering
+            </a>
+        </li>
+
+        <li class="nav-item tsb-nav-item  ">
+            <a class="nav-link " href="atbartini.html">
+            at Bartini
+            </a>
+        </li>
+
+
+        </ul>
+
+        <ul class="nav navbar-nav menu-level-2 flex-column">
+        <li class="nav-item tsb-nav-item">
+            <a class="nav-link" href="printed.html" >
+                Printed
+            </a>
+            </li>
+
+        </ul>
+
+
+    </div><!-- ml-auto -->
+</div><!-- sidebar -->
+
+</div><!-- nav-overlay-content -->
+
+</div><!-- nav-overlay -->
+
+
+<script>
+// navOverlay
+function openNav() {
+      document.getElementById("navOverlay").style.width = "100%";
+      $('#footer').css('display', 'none'); // Hide footer if necessary
+  }
+  function closeNav() {
+      document.getElementById("navOverlay").style.width = "0%";
+      $('#footer').css('display', 'block'); // Show footer when closing overlay
+  }
+</script>
+     
+</body>
+</html>
