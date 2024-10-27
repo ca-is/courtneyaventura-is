@@ -180,74 +180,62 @@ md and down
     /* margin-left: -10px; */
 }
 
-.nav-overlay {
-    /* position: absolute;
-    top:0; */
-    /* margin-bottom: 75px; */
-    /* visibility:hidden; */
+  
+  
+  
+@media screen and (max-width: 575px) {
+.nav-center-wrapper-overlay  {
+    left: calc(1 * (100% / 13));
 }
 
-
-
-
-  
-  
-  
-  @media screen and (max-width: 575px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 13));
-    }
-  
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 13));
-    }
-  
-    .closebtn  {
-      right: calc(1 * (100% / 13));
-    }
-  }
-  
-  @media screen and (min-width: 576px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 16));
-    }
-  
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 16));
-    }
-  
-    .closebtn  {
-      right: calc(1 * (100% / 13));
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 18));
-    }
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 18));
-    }
-    .closebtn  {
-      right: calc(1 * (100% / 17));
-    }
-  }
-  
-  
-  
-  /* NAV OVERLAY
-    lg and up
-  -------------------------------------------------- */
-  .sidebar {
-    /* margin-top: 125px; */
-    margin-top: 83px;
+.nav-overlay-content {
+    padding-left: calc(1 * (100% / 13));
 }
-  @media (min-width: 992px) {
-    .nav-center-wrapper-overlay {
-      /* position: absolute;
-      left: 50px;
-      top: 16px; */
-    }
+
+.closebtn  {
+    right: calc(1 * (100% / 13));
+}
+}
+  
+@media screen and (min-width: 576px) {
+.nav-center-wrapper-overlay  {
+    left: calc(1 * (100% / 16));
+}
+
+.nav-overlay-content {
+    padding-left: calc(1 * (100% / 16));
+}
+
+.closebtn  {
+    right: calc(1 * (100% / 13));
+}
+}
+
+@media screen and (min-width: 768px) {
+.nav-center-wrapper-overlay  {
+    left: calc(1 * (100% / 18));
+}
+.nav-overlay-content {
+    padding-left: calc(1 * (100% / 18));
+}
+.closebtn  {
+    right: calc(1 * (100% / 17));
+}
+}
+  
+  
+  
+/* NAV OVERLAY
+lg and up
+-------------------------------------------------- */
+.sidebar {
+/* margin-top: 125px; */
+margin-top: 83px;
+}
+  /* @media (min-width: 992px) { */
+    /* .nav-center-wrapper-overlay {
+
+    } */
   
     /* .nav-overlay {
       position: absolute;
@@ -257,20 +245,20 @@ md and down
       color: #800300 !important;
     } */
   
-    .nav-overlay-content {
+    /* .nav-overlay-content { */
         /* position: fixed;
         width: 250px;
         margin-top: 100px;
         padding-left: 40px; */
-    }
+    /* } */
   
-    .nav-overlay-content {
+    /* .nav-overlay-content { */
       /* margin-right: auto;
       margin-left: auto;
       max-width: 1600px;  */
       /* or 950px */
-    }
-  }
+    /* } */
+  /* } */
   
   /* sidebar nav
     lg and up
