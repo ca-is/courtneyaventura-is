@@ -1,0 +1,80 @@
+/* ca-page-title
+-------------------------------------------------- */
+.page-title-wrapper {
+    position: fixed;
+  }
+  
+  @media (max-width: 991px) {
+    .page-title-wrapper {
+      margin-top: 72px;
+    }
+    .page-title {
+      height: 39px;
+      width: auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .page-title-wrapper {
+      margin-top: 92px;
+    }
+    .page-title {
+        height: 49px;
+        width: auto;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .page-title-wrapper {
+      top: 45px;
+      margin-top: 65px;
+    }
+    .page-title {
+        height: 59px;
+        width: auto;
+    }
+  }
+
+
+/* ss-dining swank n swine
+-------------------------------------------------- */
+@media (max-width: 991px) {
+    /* .ss-dining, 
+    .ss-dining-italic {
+      height: 39px;
+      width: auto;
+    } */
+  }
+  
+  @media (min-width: 992px) {
+    /* .ss-dining, 
+    .ss-dining-italic {
+      height: 49px;
+      width: auto;
+    } */
+  }
+  
+  @media (min-width: 1200px) {
+    /* .ss-dining, 
+    .ss-dining-italic {
+        height: 59px;
+        width: auto;
+      } */
+  }
+
+/* ss-dining swank n swine
+-------------------------------------------------- */
+/* Hide the second SVG initially */
+.ss-dining svg:nth-child(2) {
+    display: none;
+  }
+  
+  /* Show the second SVG on hover, hide the first */
+  .ss-dining:hover svg:nth-child(1) {
+    display: none;
+  }
+  
+  .ss-dining:hover svg:nth-child(2) {
+    display: inline;
+  }
+

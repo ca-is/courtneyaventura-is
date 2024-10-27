@@ -17,7 +17,7 @@ header {
 .nav-right-wrapper {
   position: fixed;
   cursor: pointer;
-  z-index: 999;
+  z-index: 99;
 }
 
 @media (max-width: 991px) {
@@ -38,11 +38,30 @@ header {
 
 /* logos sized by height
 -------------------------------------------------- */
+
+.svg-responsive {
+  height: 100%;     /* Responsive, 50% of the container's width */
+  width: auto;   /* Maintain aspect ratio */
+}
+
+.logo-cdot,
+.logo-ca, 
+.logo-is, 
+.logo-ca-is {
+  height: 30px;
+  width: auto;
+}
+
+.ca-toggler {
+  padding-top: 5px;
+}
+
 @media (max-width: 576px) {
   .logo-cdot svg,
   .logo-ca svg, 
-  .logo-is svg {
-    height: 20px;
+  .logo-is svg, 
+  .logo-ca-is svg {
+    height: 20px !important;
     width: auto;
   }
 }
@@ -50,7 +69,8 @@ header {
 @media (max-width: 991px) {
   .logo-cdot svg,
   .logo-ca svg, 
-  .logo-is svg {
+  .logo-is svg, 
+  .logo-ca-is svg {
     height: 24px;
     width:auto; 
   }
@@ -59,7 +79,8 @@ header {
 @media (min-width: 992px) {
   .logo-cdot svg,
   .logo-ca svg, 
-  .logo-is svg {
+  .logo-is svg, 
+  .logo-ca-is svg {
     height: 24px;
     width: auto;
   }
@@ -167,29 +188,37 @@ header {
 
   
 /* nav-right-wrapper:
-    fixed right
+   fixed right
 -------------------------------------------------- */
 
 @media screen and (max-width: 575px) {
-  .nav-right-wrapper  {
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
     right: calc(1 * (100% / 13));
   }
 }
 
 @media screen and (min-width: 576px) {
-  .nav-right-wrapper  {
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close {
     right: calc(1 * (100% / 16));
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-right-wrapper  {
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
     right: calc(1 * (100% / 17));
   }
 }
 
 @media (min-width: 992px) {
-  .nav-right-wrapper  {
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
     right: calc(1 * (100% / 11));
   }
 }
@@ -235,31 +264,5 @@ header {
   
   
 
-/* ca-page-title
--------------------------------------------------- */
-.ca-page-title { 
-  position: fixed;
-}
 
-@media (max-width: 991px) {
-  .ca-page-title{
-    margin-top: 75px;
-  }
-}
 
-@media (min-width: 992px) {
-
-  .ca-page-title{
-    margin-top: 101px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .ca-page-title{
-    top: 45px;
-    margin-top: 65px;
-
-    right: calc(1 * (100% / 11));
-    /* padding-top: 10px; */
-  }
-}

@@ -16,7 +16,283 @@
     transition: all .3s;
 }
 
+ 
   
+ 
+  
+  
+/* NAV OVERLAY
+md and down
+-------------------------------------------------- */
+@media (max-width: 991px) {
+    .nav-overlay {
+        /* height: 100%; */
+        width: 0; /* Hidden by default */
+        /* position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0; */
+        /* background-color: rgba(255,255,255); */
+        /* background-color: rgba(255,255,255, 0.89); */
+        /* overflow-x: hidden; */
+        /* transition: 0.5s; */
+        /* transition: width 0.5s, visibility 0.5s, opacity 0.5s ease; */
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .nav-overlay.open {
+        height: 100%;
+        width: 0; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        /* background-color: rgba(255,255,255); */
+
+        background-color: rgba(255,255,255, 0.89);
+        overflow-x: hidden;
+        /* transition: 0.5s; */
+        transition: width 0.5s, visibility 0.5s, opacity 0.5s ease;
+        width: 100%;
+        opacity: 1;
+        visibility: visible; 
+    }
+}
+
+
+/* NAV OVERLAY
+-------------------------------------------------- */
+.overlay-title, 
+.overlay-close {
+    position: fixed;
+    top: 30px;
+    height: 24px; 
+    width: auto; 
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+}
+
+/* NAV OVERLAY
+   title
+-------------------------------------------------- */
+
+/* overlay-logo-ca-is: courtney aventura is svg
+-------------------------------------------------- */
+
+/* Hide the second SVG initially */
+.overlay-logo-ca-is svg:nth-child(2) {
+    display: none;
+}
+
+/* Show the second SVG on hover, hide the first */
+.overlay-logo-ca-is:hover svg:nth-child(1) {
+    display: none;
+}
+
+.overlay-logo-ca-is:hover svg:nth-child(2) {
+    display: inline;
+}
+  
+
+
+/* NAV OVERLAY
+   close
+-------------------------------------------------- */
+.overlay-close {
+    /* position: absolute; */
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    /* margin: 0 0 0 -15px; */
+    /* padding: 15px 0 15px 15px; */
+}
+
+
+
+
+/* overlay-ca-close: close svg
+-------------------------------------------------- */
+
+/* Hide the second SVG initially */
+.overlay-ca-close svg:nth-child(2) {
+    display: none;
+}
+
+/* Show the second SVG on hover, hide the first */
+.overlay-ca-close:hover svg:nth-child(1) {
+    display: none;
+}
+
+.overlay-ca-close:hover svg:nth-child(2) {
+    display: inline;
+}
+
+
+
+/* NAV OVERLAY
+   close
+-------------------------------------------------- */
+/* .overlay-ca-close {
+
+} */
+
+
+/* NAV OVERLAY
+   content
+-------------------------------------------------- */    
+.nav-overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-overlay a {
+    /* padding: 8px; */
+    text-decoration: none;
+    color: #800300;
+    /* display: block; */
+    transition: 0.3s;
+}
+
+/* .nav-overlay a:active > footer.footer {
+    display: none; 
+    visibility: hidden;
+    height:0;
+} */
+
+
+
+/* .nav-overlay a:hover,
+.nav-overlay a:focus {
+    color: #f1f1f1;
+} */
+
+.navbar-nav .dropdown-menu {
+    display: none;
+}
+
+.nav-overlay .nav-center-wrapper-overlay {
+    position: absolute;
+    top: 16px;
+    padding: 15px 15px 15px 0;
+    /* margin-left: -10px; */
+}
+
+.nav-overlay {
+    /* position: absolute;
+    top:0; */
+    /* margin-bottom: 75px; */
+    /* visibility:hidden; */
+}
+
+
+
+
+  
+  
+  
+  @media screen and (max-width: 575px) {
+    .nav-center-wrapper-overlay  {
+      left: calc(1 * (100% / 13));
+    }
+  
+    .nav-overlay-content {
+      padding-left: calc(1 * (100% / 13));
+    }
+  
+    .closebtn  {
+      right: calc(1 * (100% / 13));
+    }
+  }
+  
+  @media screen and (min-width: 576px) {
+    .nav-center-wrapper-overlay  {
+      left: calc(1 * (100% / 16));
+    }
+  
+    .nav-overlay-content {
+      padding-left: calc(1 * (100% / 16));
+    }
+  
+    .closebtn  {
+      right: calc(1 * (100% / 13));
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .nav-center-wrapper-overlay  {
+      left: calc(1 * (100% / 18));
+    }
+    .nav-overlay-content {
+      padding-left: calc(1 * (100% / 18));
+    }
+    .closebtn  {
+      right: calc(1 * (100% / 17));
+    }
+  }
+  
+  
+  
+  /* NAV OVERLAY
+    lg and up
+  -------------------------------------------------- */
+  .sidebar {
+    /* margin-top: 125px; */
+    margin-top: 83px;
+}
+  @media (min-width: 992px) {
+    .nav-center-wrapper-overlay {
+      /* position: absolute;
+      left: 50px;
+      top: 16px; */
+    }
+  
+    /* .nav-overlay {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      z-index: 99;
+      color: #800300 !important;
+    } */
+  
+    .nav-overlay-content {
+        /* position: fixed;
+        width: 250px;
+        margin-top: 100px;
+        padding-left: 40px; */
+    }
+  
+    .nav-overlay-content {
+      /* margin-right: auto;
+      margin-left: auto;
+      max-width: 1600px;  */
+      /* or 950px */
+    }
+  }
+  
+  /* sidebar nav
+    lg and up
+  -------------------------------------------------- */
+  @media (min-width: 992px) {
+    .sidebar  {
+      position: fixed;
+      left: calc(1 * (100% / 11));
+      top: 100px;
+      padding-top: 10px;
+      margin-left: -.15%;
+      padding-bottom: 16px;
+      z-index: 40;
+      opacity: 1;
+      -webkit-transition: opacity .6s ease;
+      transition: opacity .6s ease;
+      overflow: hidden;
+  
+    }
+  }
+
+   
 /* Custom navbar-toggler non-toggler (expand-lg):
    lg and up
  -------------------------------------------------- */
@@ -28,7 +304,6 @@
 }
 
 
-
 @media (min-width: 992px) {
     .openbtn {
         position: fixed;
@@ -37,9 +312,8 @@
         /* padding-top: 10px; */
     }
 }
-  
- 
-  
+
+
   
   /* navbar: title
   -------------------------------------------------- */
@@ -183,6 +457,8 @@
  
   }
   
+
+
   /* navbar: dropdown
   -------------------------------------------------- */
   /* remove caret dropdown arrow */
@@ -268,192 +544,3 @@
   
   
   
-  
-  /* NAV OVERLAY
-    md and down
-  -------------------------------------------------- */
-  @media (max-width: 991px) {
-    .nav-overlay {
-        height: 100%;
-        width: 0; /* Hidden by default */
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        /* background-color: rgb(255,255,255); */
-        background-color: rgba(255,255,255, 0.99);
-        overflow-x: hidden;
-        /* transition: 0.5s; */
-        transition: width 0.5s, visibility 0.5s, opacity 0.5s ease;
-        opacity: 0;
-        visibility: hidden;
-    }
-  
-    .nav-overlay.open {
-      width: 100%;
-      opacity: 1;
-      visibility: visible;  
-    }
-
-    .nav-overlay-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-  
-    .nav-overlay a {
-        /* padding: 8px; */
-        text-decoration: none;
-        color: #800300;
-        display: block;
-        transition: 0.3s;
-    }
- 
-    /* .nav-overlay a:active > footer.footer {
-      display: none; 
-      visibility: hidden;
-      height:0;
-    } */
- 
- 
-  
-    /* .nav-overlay a:hover,
-    .nav-overlay a:focus {
-        color: #f1f1f1;
-    } */
-  
-    .navbar-nav .dropdown-menu {
-      display: none;
-    }
-  
-    .nav-overlay .nav-center-wrapper-overlay {
-      position: absolute;
-      top: 16px;
-      padding: 15px 15px 15px 0;
-      /* margin-left: -10px; */
-    }
-  
-    .nav-overlay {
-      position: absolute;
-      top:0;
-      /* margin-bottom: 75px; */
-      /* visibility:hidden; */
-    }
-  
-    .nav-overlay .closebtn {
-        position: absolute;
-        top: 16px;
-    }
-    .closebtn {
-        /* position: absolute; */
-        -webkit-transition: all .3s;
-        transition: all .3s;
-        /* margin: 0 0 0 -15px; */
-        padding: 15px 0 15px 15px;
-        cursor: pointer;
-        border: none;
-        z-index: 99;
-    }
-  
-    .sidebar {
-      /* margin-top: 125px; */
-      margin-top: 83px;
-    }
-  }
-  
-  
-  
-  @media screen and (max-width: 575px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 13));
-    }
-  
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 13));
-    }
-  
-    .closebtn  {
-      right: calc(1 * (100% / 13));
-    }
-  }
-  
-  @media screen and (min-width: 576px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 16));
-    }
-  
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 16));
-    }
-  
-    .closebtn  {
-      right: calc(1 * (100% / 13));
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 18));
-    }
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 18));
-    }
-    .closebtn  {
-      right: calc(1 * (100% / 17));
-    }
-  }
-  
-  
-  
-  /* NAV OVERLAY
-    lg and up
-  -------------------------------------------------- */
-  @media (min-width: 992px) {
-    .nav-center-wrapper-overlay {
-      position: absolute;
-      left: 50px;
-      top: 16px;
-    }
-  
-    .nav-overlay {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      z-index: 99;
-      color: #800300 !important;
-    }
-  
-    .nav-overlay-content {
-        position: fixed;
-        width: 250px;
-        margin-top: 100px;
-        padding-left: 40px;
-    }
-  
-    .nav-overlay-content {
-      margin-right: auto;
-      margin-left: auto;
-      max-width: 1600px; /* or 950px */
-    }
-  }
-  
-  /* sidebar nav
-    lg and up
-  -------------------------------------------------- */
-  @media (min-width: 992px) {
-    .sidebar  {
-      position: fixed;
-      left: calc(1 * (100% / 11));
-      top: 100px;
-      padding-top: 10px;
-      margin-left: -.15%;
-      padding-bottom: 16px;
-      z-index: 40;
-      opacity: 1;
-      -webkit-transition: opacity .6s ease;
-      transition: opacity .6s ease;
-      overflow: hidden;
-  
-    }
-  }
