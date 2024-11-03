@@ -3,38 +3,102 @@
 .page-title-wrapper {
     position: fixed;
   }
-  
-  @media (max-width: 991px) {
-    .page-title-wrapper {
-      margin-top: 72px;
-    }
-    .page-title {
-      height: 39px;
-      width: auto;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .page-title-wrapper {
-      margin-top: 92px;
-    }
-    .page-title {
-        height: 49px;
-        width: auto;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .page-title-wrapper {
-      top: 45px;
-      margin-top: 65px;
-    }
-    .page-title {
-        height: 59px;
-        width: auto;
-    }
-  }
 
+
+/* xxs and xs and sm */
+@media (max-width: 767px) {
+  .page-title-wrapper {
+    margin-top: 72px;
+  }
+  .page-title-2line{
+    height: 43.25px;
+    width: auto;
+  }
+  .page-title-3line {
+      height: 65.5px;
+      width: auto;
+  }
+}
+  
+/* md */
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-title-wrapper {
+    margin-top: 72px;
+  }
+  .page-title-2line{
+    height: 52px;
+    width: auto;
+  }
+  .page-title-3line {
+      height: 78.5px;
+      width: auto;
+  }
+}
+
+/* lg 992-1199 */
+@media (min-width: 992px) {
+  .page-title-wrapper {
+    margin-top: 92px;
+  }
+  .page-title-2line{
+      height: 52px;
+      width: auto;
+  }
+  .page-title-3line {
+      height: 78.5px;
+      width: auto;
+  }
+}
+  
+/* xl 1200-1399 */
+@media (min-width: 1200px) {
+  .page-title-wrapper {
+    top: 45px;
+    margin-top: 65px;
+  }
+  .page-title-2line{
+      height: 52px;
+      width: auto;
+  }
+  .page-title-3line {
+      height: 79px;
+      width: auto;
+  }
+}
+
+
+/* work index homepage
+-------------------------------------------------- */
+/* Hide the second SVG initially */
+.work svg:nth-child(2) {
+    display: none;
+}
+
+/* Show the second SVG on hover, hide the first */
+.work:hover svg:nth-child(1) {
+    display: none;
+}
+
+.work:hover svg:nth-child(2) {
+    display: inline;
+}
+
+
+/* ss-dining swank n swine
+-------------------------------------------------- */
+/* Hide the second SVG initially */
+.ss-dining svg:nth-child(2) {
+    display: none;
+  }
+  
+  /* Show the second SVG on hover, hide the first */
+  .ss-dining:hover svg:nth-child(1) {
+    display: none;
+  }
+  
+  .ss-dining:hover svg:nth-child(2) {
+    display: inline;
+  }
 
 /* ss-dining swank n swine
 -------------------------------------------------- */
@@ -61,20 +125,3 @@
         width: auto;
       } */
   }
-
-/* ss-dining swank n swine
--------------------------------------------------- */
-/* Hide the second SVG initially */
-.ss-dining svg:nth-child(2) {
-    display: none;
-  }
-  
-  /* Show the second SVG on hover, hide the first */
-  .ss-dining:hover svg:nth-child(1) {
-    display: none;
-  }
-  
-  .ss-dining:hover svg:nth-child(2) {
-    display: inline;
-  }
-

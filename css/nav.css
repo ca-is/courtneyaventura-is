@@ -87,52 +87,98 @@ header {
 }
 
 
-/* nav-left-wrapper
+/* nav-left-wrapper, 
+   nav-right-wrapper
 -------------------------------------------------- */
+/* xxs up to 399 */
+@media (max-width: 399px) {
+  .nav-left-wrapper {
+    left: calc(1 * (100% / 12));
+  }
 
-@media screen and (max-width: 400px) {
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
+    right: calc(1 * (100% / 12));
+  }
+}
+
+/* xs 400-575 */
+@media (min-width:400px) and (max-width: 575px) {
   .nav-left-wrapper {
     left: calc(1 * (100% / 13));
   }
-}
 
-@media screen and (max-width: 576px) {
-  .nav-left-wrapper {
-    left: calc(1 * (100% / 14));
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
+    right: calc(1 * (100% / 13));
   }
 }
 
-@media screen and (min-width: 576px) {
+/* sm 576-767 */
+@media (min-width:576px) and (max-width: 767px) {
   .nav-left-wrapper {
     left: calc(1 * (100% / 16));
   }
 
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close {
+    right: calc(1 * (100% / 16));
+  }
 }
 
-@media screen and (min-width: 768px) {
+/* md 768-991 */
+@media (min-width:768px) and (max-width: 991px) {
   .nav-left-wrapper {
     left: calc(1 * (100% / 18));
   }
+
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
+    right: calc(1 * (100% / 18));
+  }
 }
 
-
-@media (min-width: 992px) {
+/* lg 992-1199 */
+@media (min-width:992px) and (max-width: 1199px) {
   .nav-left-wrapper {
     left: calc(1 * (100% / 11));
   }
-}
-
-@media (min-width: 1200px) {
-  .nav-left-wrapper {
-    left: calc(1 * (100% / 12));
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
+    right: calc(1 * (100% / 11));
   }
 }
 
+/* xl 1200-1399 */
+@media (min-width:1200px) and (max-width: 1399px) {
+  .nav-left-wrapper {
+    left: calc(1 * (100% / 12));
+  }
+
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
+    right: calc(1 * (100% / 12));
+  }
+}
+
+
+/* xxl 1400+ */
 @media (min-width: 1400px) {
-    /* .tsb-logo {
-        width: 240px;
-        height: auto;
-    } */
+  .nav-left-wrapper {
+    left: calc(1 * (100% / 14));
+  }
+
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close  {
+    right: calc(1 * (100% / 14));
+  }
 }
 
 
@@ -187,44 +233,8 @@ header {
 
 
   
-/* nav-right-wrapper:
-   fixed right
+/* nav-right-wrapper
 -------------------------------------------------- */
-
-@media screen and (max-width: 575px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close  {
-    right: calc(1 * (100% / 13));
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close {
-    right: calc(1 * (100% / 16));
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close  {
-    right: calc(1 * (100% / 17));
-  }
-}
-
-@media (min-width: 992px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close  {
-    right: calc(1 * (100% / 11));
-  }
-}
-
-
-
 
 /* logo-is: courtney aventura is svg
 -------------------------------------------------- */
