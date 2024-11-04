@@ -70,7 +70,7 @@
 /* md */
 @media (min-width: 768px) and (max-width: 991px) {
   .section-top {
-    margin-top: 88px;
+    margin-top: 72px;
     margin-bottom: 75px;
   }
 
@@ -93,12 +93,12 @@
 /* lg 992-1199 */
 @media (min-width: 992px) and (max-width: 1199px) {
   .section-top {
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 75px;
   }
 
   .page-title-wrapper {
-    top: 88px;
+    top: 120px;
   }
 
   .page-title-2line {
