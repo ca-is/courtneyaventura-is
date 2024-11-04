@@ -16,48 +16,45 @@
     transition: all .3s;
 }
 
- 
-  
- 
   
   
 /* NAV OVERLAY
 md and down
 -------------------------------------------------- */
 @media (max-width: 991px) {
-    .nav-overlay {
-        /* height: 100%; */
-        width: 0; /* Hidden by default */
-        /* position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0; */
-        /* background-color: rgba(255,255,255); */
-        /* background-color: rgba(255,255,255, 0.89); */
-        /* overflow-x: hidden; */
-        /* transition: 0.5s; */
-        /* transition: width 0.5s, visibility 0.5s, opacity 0.5s ease; */
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    .nav-overlay.open {
-        height: 100%;
-        width: 0; /* Hidden by default */
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0;
-        /* background-color: rgba(255,255,255); */
+  .nav-overlay {
+      /* height: 100%; */
+      width: 0; /* Hidden by default */
+      /* position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0; */
+      /* background-color: rgba(255,255,255); */
+      /* background-color: rgba(255,255,255, 0.89); */
+      /* overflow-x: hidden; */
+      /* transition: 0.5s; */
+      /* transition: width 0.5s, visibility 0.5s, opacity 0.5s ease; */
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  .nav-overlay.open {
+      height: 100%;
+      width: 0; /* Hidden by default */
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      /* background-color: rgba(255,255,255); */
 
-        background-color: rgba(255,255,255, 0.89);
-        overflow-x: hidden;
-        /* transition: 0.5s; */
-        transition: width 0.5s, visibility 0.5s, opacity 0.5s ease;
-        width: 100%;
-        opacity: 1;
-        visibility: visible; 
-    }
+      background-color: rgba(255,255,255, 0.89);
+      overflow-x: hidden;
+      /* transition: 0.5s; */
+      transition: width 0.5s, visibility 0.5s, opacity 0.5s ease;
+      width: 100%;
+      opacity: 1;
+      visibility: visible; 
+  }
 }
 
 
@@ -273,9 +270,8 @@ lg and up
 @media (min-width: 992px) {
   .sidebar  {
     position: fixed;
-    left: calc(1 * (100% / 11));
     top: 100px;
-    margin-left: -.15%;
+    margin-left: -.35rem;
     padding-top: 10px;
     padding-bottom: 16px;
     z-index: 40;

@@ -44,7 +44,8 @@ footer {
 .footer-link,
 .footer-link a {
   /* color: #800300 !important; */
-  color: #C8C8C8 !important;
+  /* color: #C8C8C8 !important; */
+  color: rgba(0, 0, 0, 0.56); 
   font-family: "ministry","helvetica neue", sans-serif;
   font-style: normal;
   font-weight: 300;

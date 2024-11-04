@@ -8,7 +8,7 @@
 /* xxs and xs and sm */
 @media (max-width: 767px) {
   .page-title-wrapper {
-    margin-top: 72px;
+    top: 72px;
   }
   .page-title-2line{
     height: 43.25px;
@@ -23,14 +23,16 @@
 /* md */
 @media (min-width: 768px) and (max-width: 991px) {
   .page-title-wrapper {
-    margin-top: 72px;
+    top: 72px;
   }
   .page-title-2line{
-    height: 52px;
+    /* height: 52px; */
+    height: 43.25px;
     width: auto;
   }
   .page-title-3line {
-      height: 78.5px;
+      /* height: 78.5px; */
+      height: 65.5px;
       width: auto;
   }
 }
@@ -38,14 +40,14 @@
 /* lg 992-1199 */
 @media (min-width: 992px) {
   .page-title-wrapper {
-    margin-top: 92px;
+    top: 131px;
   }
   .page-title-2line{
-      height: 52px;
-      width: auto;
+    height: 43.25px;
+    width: auto;
   }
   .page-title-3line {
-      height: 78.5px;
+      height: 65.5px;
       width: auto;
   }
 }
@@ -53,15 +55,16 @@
 /* xl 1200-1399 */
 @media (min-width: 1200px) {
   .page-title-wrapper {
-    top: 45px;
-    margin-top: 65px;
+    top: 131px;
+    /* margin-top: 88px; */
   }
   .page-title-2line{
-      height: 52px;
+      height: 47.5px;
       width: auto;
   }
   .page-title-3line {
-      height: 79px;
+      /* height: 79px; */
+      height: 65.5px;
       width: auto;
   }
 }
