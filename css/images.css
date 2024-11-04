@@ -6,7 +6,25 @@
   width: auto;   /* Maintain aspect ratio */
 }
 
+/* general svg-hover  */
 
+/* Hide the second SVG initially */
+.svg-italics svg:nth-child(2) {
+  display: none;
+}
+
+/* Show the second SVG on hover, hide the first */
+.svg-italics:hover svg:nth-child(1) {
+  display: none;
+}
+
+.svg-italics:hover svg:nth-child(2) {
+  display: inline;
+}
+
+
+/* Full-Width
+ -------------------------------------------------- */
 /* full-width on xs */
 @media screen and (max-width: 575px) {
   .full-width {
