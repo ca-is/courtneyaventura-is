@@ -273,6 +273,11 @@ md and down
   }
 }
 
+@media (max-width: 991px) {
+  .sidebar  {
+    margin-left: .15rem;
+  }
+}
 
 @media (min-width: 992px) {
   .sidebar  {
