@@ -259,28 +259,32 @@ md and down
 }
   
   
+/* NAV OVERLAY lg and up
+   overlay-sidebar
+-------------------------------------------------- */
+@media (max-width: 991px) {
+  .overlay-sidebar  {
+    margin-left: .15rem;
+  }
+  /* .navbar-nav .dropdown-menu  {
+    display: none;
+  } */
+}
   
 /* NAV OVERLAY lg and up
    sidebar
 -------------------------------------------------- */
 
 @media screen and (max-width: 1199px) {
-  .navbar-nav .dropdown-menu  {
-    display: none;
-  }
-  .sidebar {
+
+  .overlay-sidebar {
     margin-top: 83px;
   }
 }
 
-@media (max-width: 991px) {
-  .sidebar  {
-    margin-left: .15rem;
-  }
-}
 
 @media (min-width: 992px) {
-  .sidebar  {
+  .sidebar {
     position: fixed;
     top: 100px;
     margin-left: -.35rem;
@@ -291,7 +295,9 @@ md and down
     -webkit-transition: opacity .6s ease;
     transition: opacity .6s ease;
     overflow: hidden;
+    visibility: visible; 
   }
+
 }
 
    
