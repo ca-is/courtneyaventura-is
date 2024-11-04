@@ -1,6 +1,6 @@
 footer {
     height: 200px;
-    padding: 30px 0 60px 0;
+    padding: 24px 0 64px 0;
     display: block;
   }
 
@@ -45,7 +45,8 @@ footer {
 .footer-link a {
   /* color: #800300 !important; */
   /* color: #C8C8C8 !important; */
-  color: rgba(0, 0, 0, 0.56); 
+  /* color: rgba(0, 0, 0, 0.56); */
+  color: #808080; 
   font-family: "ministry","helvetica neue", sans-serif;
   font-style: normal;
   font-weight: 300;

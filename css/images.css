@@ -1,4 +1,13 @@
 
+/* SVGs
+ -------------------------------------------------- */
+.svg-responsive {
+  height: 100%;     /* Responsive, 50% of the container's width */
+  width: auto;   /* Maintain aspect ratio */
+}
+
+
+
 /* Images
  -------------------------------------------------- */
  
