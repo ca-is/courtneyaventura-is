@@ -1,32 +1,14 @@
 .h-100 {
   height: 100vh !important;
-}
-
-  
-  
+} 
 
 
-  /* padding above top section
-    align with nav below page title */
-    /* @media screen and (max-width: 575px) {
-    .section-top {
-       margin-top: 50px;
-     }
-     .section-scroll {
-       padding-top: 55px;
-     }
-   } */
- 
 
-
-  
-      
       
 @media screen and (min-width: 768px) {
   /* .section-max-width {
   margin-right:11px !important;
   } */
-
   
   .section-scroll {
     padding-top: 110px;
@@ -50,3 +32,15 @@
   }
 
 }
+
+
+  /* padding above top section
+    align with nav below page title */
+    /* @media screen and (max-width: 575px) {
+    .section-top {
+       margin-top: 50px;
+     }
+     .section-scroll {
+       padding-top: 55px;
+     }
+   } */
