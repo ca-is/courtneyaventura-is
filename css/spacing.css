@@ -1,7 +1,39 @@
-html, body {
+
+/* xxs 0-399 */
+@media (max-width: 399px) {
+}
+
+/* xs 400-575 */
+@media (min-width:400px) and (max-width: 575px) {
+
+}
+
+/* sm 767-991 */
+@media (min-width:576px) and (max-width: 767px) {
+
+}
+
+/* md 768-991 */
+@media (min-width:768px) and (max-width: 991px) {
+
+}
+
+/* lg 992-1199 */
+@media (min-width:992px) and (max-width: 1199px) {
+
+
+}
+
+/* xl 1200 and up */
+@media (min-width: 1200px) {
+}
+
+
+
+/* html, body {
   max-width: 100%;
   overflow-x: hidden;
-}
+} */
 
 .container-fluid {
   max-width: 1400px !important;
@@ -11,9 +43,15 @@ html, body {
   height: 100vh !important;
 } 
 
+.section-scroll .container-fluid {
+  margin-bottom: 48px;
+}
 
+/* xxs 0-757 */
+@media screen and (max-width: 767px) {
 
-      
+}
+
 @media screen and (min-width: 768px) {
   /* .section-max-width {
   margin-right:11px !important;
@@ -21,17 +59,13 @@ html, body {
   
   .section-scroll {
     padding-top: 110px;
-  }
-
-  .section-scroll {
-    margin-bottom: 125px;
+    margin-bottom: 48px;
   }
 
   .h-100-center {
     height: 100vh !important;
     margin-top: -110px;
   }
-
 }
   
 @media screen and (min-width: 992px) {
@@ -40,6 +74,7 @@ html, body {
     margin-top: -34px;
   }
 
+  
 }
 
 
