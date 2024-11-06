@@ -36,9 +36,13 @@
   }
 }
 
+
 .footer p,
 .footer-link,
-.footer-link a {
+.footer-link a
+.overlay-footer .footer p,
+.overlay-footer .footer-link,
+.overlay-footer .footer-link a {
   /* color: #800300 !important; */
   /* color: #C8C8C8 !important; */
   /* color: rgba(0, 0, 0, 0.56); */
@@ -53,8 +57,11 @@
 @media (max-width: 991px) {
     .footer p,
     .footer-link,
-    .footer-link a {
-      font-size: .75rem;
+    .footer-link a, 
+    .overlay-footer .footer p,
+    .overlay-footer .footer-link,
+    .overlay-footer .footer-link a  {
+      font-size: .65rem;
     }
 }
 

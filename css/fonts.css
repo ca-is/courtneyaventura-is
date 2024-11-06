@@ -51,8 +51,10 @@
       .tsb-h2,
       .tsb-h3,
       .tsb-figure-caption,
-      .tsb-figure-caption a {
-        font-size: .75rem;
+      .tsb-figure-caption a, 
+      .ca-nav-item, 
+      .ca-dropdown-item {
+        font-size: .7rem;
       }
   }
   
@@ -96,6 +98,7 @@
     line-height: 175%; */
   }
  
+
   .tsb-figure {
     margin: 35px 0;
   }
