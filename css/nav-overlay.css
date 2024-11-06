@@ -8,71 +8,122 @@
   border-image-width: 0 !important;
 }
 
+
+
 /* Custom navbar-toggler:
   md and down
 -------------------------------------------------- */
-.ca-toggler-btn {
+.ca-toggler-btn, 
+.overlay-close-wrapper {
     -webkit-transition: all .3s;
     transition: all .3s;
 }
 
- 
-  
- 
+.ca-toggler {
+  padding-top: 5px;
+}
   
   
 /* NAV OVERLAY
 md and down
 -------------------------------------------------- */
-@media (max-width: 991px) {
-    .nav-overlay {
-        /* height: 100%; */
-        width: 0; /* Hidden by default */
-        /* position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0; */
-        /* background-color: rgba(255,255,255); */
-        /* background-color: rgba(255,255,255, 0.89); */
-        /* overflow-x: hidden; */
-        /* transition: 0.5s; */
-        /* transition: width 0.5s, visibility 0.5s, opacity 0.5s ease; */
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    .nav-overlay.open {
-        height: 100%;
-        width: 0; /* Hidden by default */
-        position: fixed;
-        z-index: 1000;
-        top: 0;
-        left: 0;
-        /* background-color: rgba(255,255,255); */
 
-        background-color: rgba(255,255,255, 0.89);
-        overflow-x: hidden;
-        /* transition: 0.5s; */
-        transition: width 0.5s, visibility 0.5s, opacity 0.5s ease;
-        width: 100%;
-        opacity: 1;
-        visibility: visible; 
-    }
+#navOverlay {
+  opacity: 0;
+  transform: translateX(-100%); /* Adjust as needed */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Adjust timing */
+  /* other styles for overlay */
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.98); /* semi-transparent background */
 }
 
+/* Open state */
+#navOverlay.open {
+  opacity: 1;
+  transform: translateX(0); /* Fully visible position */
+}
+
+/* @media (max-width: 991px) { */
+  /* Hidden by default */
+
+  /* .nav-overlay {
+      width: 0; 
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+  }
+  
+  .nav-overlay.open {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      background-color: rgba(255,255,255, 0.98);
+      overflow-x: hidden;
+      transition: width 0.5s, visibility 0.5s, opacity 0.5s ease;
+      width: 100%;
+      opacity: 1;
+      visibility: visible; 
+  } */
+
+/* } */
 
 /* NAV OVERLAY
 -------------------------------------------------- */
-.overlay-title, 
-.overlay-close {
-    position: fixed;
-    top: 30px;
-    height: 24px; 
-    width: auto; 
-    cursor: pointer;
-    border: none;
-    z-index: 99;
+.overlay-title-wrapper, 
+.overlay-close-wrapper {
+  position: fixed;
+  cursor: pointer;
+  z-index: 99999;
 }
+
+@media (max-width: 991px) {
+  .overlay-title-wrapper {
+    top: 29px;
+  }
+ 
+  .overlay-close-wrapper  {
+    top: 27px;
+  }
+}
+
+/* xxs 0-399 */
+@media (max-width: 399px) {
+
+}
+
+/* xs 400-575 */
+@media (min-width:400px) and (max-width: 575px) {
+
+}
+
+/* sm 767-991 */
+@media (min-width:576px) and (max-width: 767px) {
+
+}
+
+/* md 768-991 */
+@media (min-width:768px) and (max-width: 991px) {
+
+}
+
+/* lg 992-1199 */
+@media (min-width:992px) and (max-width: 1199px) {
+
+
+}
+
+/* xl 1200 and up */
+@media (min-width: 1200px) {
+}
+
 
 /* NAV OVERLAY
    title
@@ -100,15 +151,6 @@ md and down
 /* NAV OVERLAY
    close
 -------------------------------------------------- */
-.overlay-close {
-    /* position: absolute; */
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    /* margin: 0 0 0 -15px; */
-    /* padding: 15px 0 15px 15px; */
-}
-
-
 
 
 /* overlay-ca-close: close svg
@@ -133,9 +175,7 @@ md and down
 /* NAV OVERLAY
    close
 -------------------------------------------------- */
-/* .overlay-ca-close {
 
-} */
 
 
 /* NAV OVERLAY
@@ -169,9 +209,6 @@ md and down
     color: #f1f1f1;
 } */
 
-.navbar-nav .dropdown-menu {
-    display: none;
-}
 
 .nav-overlay .nav-center-wrapper-overlay {
     position: absolute;
@@ -180,117 +217,90 @@ md and down
     /* margin-left: -10px; */
 }
 
-.nav-overlay {
-    /* position: absolute;
-    top:0; */
-    /* margin-bottom: 75px; */
-    /* visibility:hidden; */
-}
-
-
-
-
   
   
   
-  @media screen and (max-width: 575px) {
-    .nav-center-wrapper-overlay  {
+@media screen and (max-width: 575px) {
+  .nav-center-wrapper-overlay  {
       left: calc(1 * (100% / 13));
-    }
-  
-    .nav-overlay-content {
+  }
+
+  .nav-overlay-content {
       padding-left: calc(1 * (100% / 13));
-    }
-  
-    .closebtn  {
+  }
+
+  .closebtn  {
       right: calc(1 * (100% / 13));
-    }
   }
-  
-  @media screen and (min-width: 576px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 16));
-    }
-  
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 16));
-    }
-  
-    .closebtn  {
-      right: calc(1 * (100% / 13));
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .nav-center-wrapper-overlay  {
-      left: calc(1 * (100% / 18));
-    }
-    .nav-overlay-content {
-      padding-left: calc(1 * (100% / 18));
-    }
-    .closebtn  {
-      right: calc(1 * (100% / 17));
-    }
-  }
-  
-  
-  
-  /* NAV OVERLAY
-    lg and up
-  -------------------------------------------------- */
-  .sidebar {
-    /* margin-top: 125px; */
-    margin-top: 83px;
 }
-  @media (min-width: 992px) {
-    .nav-center-wrapper-overlay {
-      /* position: absolute;
-      left: 50px;
-      top: 16px; */
-    }
   
-    /* .nav-overlay {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      z-index: 99;
-      color: #800300 !important;
-    } */
-  
-    .nav-overlay-content {
-        /* position: fixed;
-        width: 250px;
-        margin-top: 100px;
-        padding-left: 40px; */
-    }
-  
-    .nav-overlay-content {
-      /* margin-right: auto;
-      margin-left: auto;
-      max-width: 1600px;  */
-      /* or 950px */
-    }
+@media screen and (min-width: 576px) {
+  .nav-center-wrapper-overlay  {
+      left: calc(1 * (100% / 16));
   }
-  
-  /* sidebar nav
-    lg and up
-  -------------------------------------------------- */
-  @media (min-width: 992px) {
-    .sidebar  {
-      position: fixed;
-      left: calc(1 * (100% / 11));
-      top: 100px;
-      padding-top: 10px;
-      margin-left: -.15%;
-      padding-bottom: 16px;
-      z-index: 40;
-      opacity: 1;
-      -webkit-transition: opacity .6s ease;
-      transition: opacity .6s ease;
-      overflow: hidden;
-  
-    }
+
+  .nav-overlay-content {
+      padding-left: calc(1 * (100% / 16));
   }
+
+  .closebtn  {
+      right: calc(1 * (100% / 13));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-center-wrapper-overlay  {
+      left: calc(1 * (100% / 18));
+  }
+  .nav-overlay-content {
+      padding-left: calc(1 * (100% / 18));
+  }
+  .closebtn  {
+      right: calc(1 * (100% / 17));
+  }
+}
+  
+  
+/* NAV OVERLAY lg and up
+   overlay-sidebar
+-------------------------------------------------- */
+@media (max-width: 991px) {
+  .overlay-sidebar  {
+    margin-left: .15rem;
+  }
+  /* .navbar-nav .dropdown-menu  {
+    display: none;
+  } */
+}
+  
+/* NAV OVERLAY lg and up
+   sidebar
+-------------------------------------------------- */
+
+@media screen and (max-width: 1199px) {
+
+  .overlay-sidebar {
+    margin-top: 83px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 100px;
+    margin-left: -.35rem;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    z-index: 40;
+    opacity: 1;
+    -webkit-transition: opacity .6s ease;
+    transition: opacity .6s ease;
+    overflow: hidden;
+    visibility: visible; 
+  }
+
+}
 
    
 /* Custom navbar-toggler non-toggler (expand-lg):
@@ -305,26 +315,23 @@ md and down
 
 
 @media (min-width: 992px) {
-    .openbtn {
-        position: fixed;
-        top: 33px;
-        right: calc(1 * (100% / 11));
-        /* padding-top: 10px; */
-    }
+  .openbtn {
+      position: fixed;
+      top: 33px;
+      right: calc(1 * (100% / 11));
+      /* padding-top: 10px; */
+  }
 }
 
 
   
   /* navbar: title
   -------------------------------------------------- */
-  /* .nav-center-wrapper,
-  .ca-toggler,
-  .ca-toggler, */
   .tsb-nav-text,
   .tsb-nav-text a,
-  .tsb-nav-item,
-  .tsb-nav-item a,
-  .tsb-dropdown-item,
+  .ca-nav-item,
+  .ca-nav-item a,
+  .ca-dropdown-item,
   .nav-center-wrapper-overlay,
   .tsb-pagetitle,
   .closebtn,
@@ -338,26 +345,25 @@ md and down
   }
   
   /* static buttons red */
-  /* .nav-center-wrapper, */
-  /* .ca-toggler, */
   .tsb-nav-text,
   .tsb-nav-text a,
-  /* .tsb-nav-item, */
-  /* .tsb-nav-item a, */
-  /* .tsb-dropdown-item, */
+  /* .ca-nav-item, */
+  /* .ca-nav-item a, */
+  /* .ca-dropdown-item, */
   .nav-center-wrapper-overlay,
-  .tsb-pagetitle,
+  /* .tsb-pagetitle, */
   /* .closebtn, */
   .openbtn {
     color: #800300 !important;
   }
   
   
-  .tsb-nav-item,
-  .tsb-nav-item a,
-  .tsb-dropdown-item,
+  .ca-nav-item,
+  .ca-nav-item a,
+  .ca-dropdown-item,
   .closebtn {
-    color: #C8C8C8 !important;
+    /* color: #C8C8C8 !important; */
+    color: #808080; 
   }
   
   
@@ -366,10 +372,10 @@ md and down
       /* .ca-toggler, */
       .tsb-nav-text,
       .tsb-nav-text a,
-      .tsb-nav-item,
-      .tsb-dropdown-item,
+      .ca-nav-item,
+      .ca-dropdown-item,
       .nav-center-wrapper-overlay,
-      .tsb-pagetitle,
+      /* .tsb-pagetitle, */
       .closebtn,
       .openbtn {
         font-size: .65rem;
@@ -380,8 +386,8 @@ md and down
     /* .ca-toggler, */
     .tsb-nav-text,
     .tsb-nav-text a,
-    .tsb-nav-item,
-    .tsb-dropdown-item,
+    .ca-nav-item,
+    .ca-dropdown-item,
     .nav-center-wrapper-overlay,
     .tsb-pagetitle,
     .closebtn,
@@ -402,20 +408,20 @@ md and down
   .tsb-nav-text:hover,
   .tsb-nav-text:active  a::after,
   
-  .tsb-nav-item .active,
-  .tsb-nav-item:hover,
-  .tsb-nav-item:active  a::after,
+  .ca-nav-item .active,
+  .ca-nav-item:hover,
+  .ca-nav-item:active  a::after,
   
-  .tsb-nav-item a:hover,
-  .tsb-nav-item a:active  a::after,
+  .ca-nav-item a:hover,
+  .ca-nav-item a:active  a::after,
   
-  .tsb-dropdown-toggle .active,
-  .tsb-dropdown-toggle:hover,
-  .tsb-dropdown-toggle:active  a::after,
+  .ca-dropdown-toggle .active,
+  .ca-dropdown-toggle:hover,
+  .ca-dropdown-toggle:active  a::after,
   
-  .tsb-dropdown-item .active,
-  .tsb-dropdown-item:hover,
-  .tsb-dropdown-item:active  a::after,
+  .ca-dropdown-item .active,
+  .ca-dropdown-item:hover,
+  .ca-dropdown-item:active  a::after,
   
   .closebtn:hover,
   .closebtn:active  a::after {
@@ -432,12 +438,12 @@ md and down
     padding-right: 0; */
   }
  
-  .nav-center-wrapper-overlay .tsb-nav-item {
+  .nav-center-wrapper-overlay .ca-nav-item {
    color: #800300 !important;
   }
  
-  a.nav-item.tsb-nav-item:hover, 
-  a.nav-item.tsb-nav-item.active {
+  a.nav-item.ca-nav-item:hover, 
+  a.nav-item.ca-nav-item.active {
    color: #800300 !important;
    font-style: italic;
    font-weight: 500;
@@ -466,7 +472,7 @@ md and down
       display:none;
   }
   
-  .tsb-dropdown-menu {
+  .ca-dropdown-menu {
     border: none;
     background-color: transparent;
   }
@@ -478,10 +484,10 @@ md and down
   
   
   @media (max-width: 991px) {
-    /* .tsb-dropdown-toggle:active {
+    /* .ca-dropdown-toggle:active {
       margin-top: 25px;
     } */
-    /* .tsb-dropdown-menu {
+    /* .ca-dropdown-menu {
       width: 250px; 
       margin-bottom: 5px;
     } */
@@ -489,10 +495,10 @@ md and down
   }
   
   @media (min-width: 992px) {
-    /* .tsb-dropdown-toggle:active {
+    /* .ca-dropdown-toggle:active {
       margin-top: 25px;
     } */
-    .tsb-dropdown-menu {
+    .ca-dropdown-menu {
       width: 250px;
       margin-bottom: 5px;
     }
@@ -500,12 +506,12 @@ md and down
   
   
   /* remove dropdown nav-item background on hover */
-  .tsb-dropdown-item.active,
-  .tsb-dropdown-item .show,
-  .tsb-dropdown-item a:hover,
-  .tsb-dropdown-item a:active,
-  .tsb-dropdown-item:hover,
-  .tsb-dropdown-item:active {
+  .ca-dropdown-item.active,
+  .ca-dropdown-item .show,
+  .ca-dropdown-item a:hover,
+  .ca-dropdown-item a:active,
+  .ca-dropdown-item:hover,
+  .ca-dropdown-item:active {
     background-color: transparent!important;
   }
   
@@ -522,14 +528,14 @@ md and down
   .ca-toggler:hover,
   .ca-toggler:active  a::after,
   
-  .tsb-nav-item:hover,
-  .tsb-nav-item:active  a::after,
+  .ca-nav-item:hover,
+  .ca-nav-item:active  a::after,
   
-  .tsb-dropdown-toggle:hover,
-  .tsb-dropdown-toggle:active  a::after,
+  .ca-dropdown-toggle:hover,
+  .ca-dropdown-toggle:active  a::after,
   
-  .tsb-dropdown-item:hover,
-  .tsb-dropdown-item:active  a::after,
+  .ca-dropdown-item:hover,
+  .ca-dropdown-item:active  a::after,
   
   .closebtn:hover,
   .closebtn:active  a::after {

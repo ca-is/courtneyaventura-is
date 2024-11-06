@@ -1,4 +1,70 @@
 
+/* SVGs
+ -------------------------------------------------- */
+.svg-responsive {
+  height: 100%;     /* Responsive, 50% of the container's width */
+  width: auto;   /* Maintain aspect ratio */
+}
+
+/* general svg-hover  */
+
+/* Hide the second SVG initially */
+.svg-italics svg:nth-child(2) {
+  display: none;
+}
+
+/* Show the second SVG on hover, hide the first */
+.svg-italics:hover svg:nth-child(1) {
+  display: none;
+}
+
+.svg-italics:hover svg:nth-child(2) {
+  display: inline;
+}
+
+
+/* Full-Width
+ -------------------------------------------------- */
+/* full-width on xs */
+@media screen and (max-width: 575px) {
+  .full-width {
+    padding: 0;
+    margin: 0;
+  }
+  .full-width-left {
+    padding-left: 0;
+    /* padding-right: 0; */
+    margin-right: 0;
+  }
+  .full-width-right {
+    /* padding-left: 0; */
+    padding-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* full-width on sm */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .full-width {
+    padding: 0;
+    margin: 0;
+  }
+
+  .full-width-left {
+    padding-left: 0;
+    /* padding-right: 0; */
+    margin-right: 0;
+  }
+
+  .full-width-right {
+    /* padding-left: 0; */
+    padding-right: 0;
+    margin-left: 0;
+  }
+}
+
+
+
 /* Images
  -------------------------------------------------- */
  

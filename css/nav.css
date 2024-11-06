@@ -31,108 +31,199 @@ header {
 @media (min-width: 992px) {
   .nav-left-wrapper, 
   .nav-center-wrapper, 
-  .nav-right-wrapper {
+  .nav-right-wrapper  {
     top: 25px;
   }
 }
 
 /* logos sized by height
 -------------------------------------------------- */
-
-.svg-responsive {
-  height: 100%;     /* Responsive, 50% of the container's width */
-  width: auto;   /* Maintain aspect ratio */
-}
-
-.logo-cdot,
-.logo-ca, 
-.logo-is, 
-.logo-ca-is {
-  height: 30px;
-  width: auto;
-}
-
-.ca-toggler {
-  padding-top: 5px;
-}
-
-@media (max-width: 576px) {
+/* xxs 0-399 */
+@media (max-width: 399px) {
   .logo-cdot svg,
   .logo-ca svg, 
   .logo-is svg, 
-  .logo-ca-is svg {
-    height: 20px !important;
+  .logo-ca-is svg, 
+  .overlay-logo-ca-is svg, 
+  .overlay-ca-close svg {
+    height: 18px;
     width: auto;
   }
 }
 
-@media (max-width: 991px) {
+/* xs 400-575 */
+@media (min-width:400px) and (max-width: 575px) {
   .logo-cdot svg,
   .logo-ca svg, 
   .logo-is svg, 
-  .logo-ca-is svg {
-    height: 24px;
+  .logo-ca-is svg, 
+  .overlay-logo-ca-is svg, 
+  .overlay-ca-close svg {
+    height: 20px;
+    width: auto;
+  }
+}
+
+/* sm 767-991 */
+@media (min-width:576px) and (max-width: 767px) {
+  .logo-cdot svg,
+  .logo-ca svg, 
+  .logo-is svg, 
+  .logo-ca-is svg, 
+  .overlay-logo-ca-is svg, 
+  .overlay-ca-close svg {
+    height: 20px;
     width:auto; 
   }
 }
 
-@media (min-width: 992px) {
+/* md 768-991 */
+@media (min-width:768px) and (max-width: 991px) {
   .logo-cdot svg,
   .logo-ca svg, 
   .logo-is svg, 
   .logo-ca-is svg {
-    height: 24px;
+    height: 20px;
+    width:auto; 
+  }
+}
+
+/* lg 992-1199 */
+@media (min-width:992px) and (max-width: 1199px) {
+  .logo-cdot svg,
+  .logo-ca svg, 
+  .logo-is svg, 
+  .logo-ca-is svg {
+    height: 20px;
     width: auto;
   }
+
+  .logo-ca-is {
+    padding-top: 8px;
+  }
+
 }
 
+/* xl 1200 and up */
+@media (min-width: 1200px) {
+  .logo-cdot svg,
+  .logo-ca svg, 
+  .logo-is svg, 
+  .logo-ca-is svg {
+    height: 22px;
+    width: auto;
+  }
+/* 
+  .logo-ca-is {
+    padding-top: 8px;
+  } */
+}
+ 
 
-/* nav-left-wrapper
+
+/* nav-left-wrapper, 
+   nav-right-wrapper
 -------------------------------------------------- */
-
-@media screen and (max-width: 400px) {
-  .nav-left-wrapper {
+/* xxs up to 399 */
+@media (max-width: 399px) {
+  .nav-left-wrapper, 
+  .sidebar, 
+  .overlay-title-wrapper {
     left: calc(1 * (100% / 13));
   }
-}
 
-@media screen and (max-width: 576px) {
-  .nav-left-wrapper {
-    left: calc(1 * (100% / 14));
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close-wrapper  {
+    right: calc(1 * (100% / 13));
   }
 }
 
-@media screen and (min-width: 576px) {
-  .nav-left-wrapper {
+/* xs 400-575 */
+@media (min-width:400px) and (max-width: 575px) {
+  .nav-left-wrapper, 
+  .sidebar, 
+  .overlay-title-wrapper {
+    left: calc(1 * (100% / 12.75));
+  }
+
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close-wrapper  {
+    right: calc(1 * (100% / 12.75));
+  }
+}
+
+/* sm 576-767 */
+@media (min-width:576px) and (max-width: 767px) {
+  .nav-left-wrapper, 
+  .sidebar, 
+  .overlay-title-wrapper {
     left: calc(1 * (100% / 16));
   }
 
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close-wrapper {
+    right: calc(1 * (100% / 16));
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .nav-left-wrapper {
+/* md 768-991 */
+@media (min-width:768px) and (max-width: 991px) {
+  .nav-left-wrapper, 
+  .sidebar, 
+  .overlay-title-wrapper {
+    left: calc(1 * (100% / 19));
+  }
+
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close-wrapper  {
+    right: calc(1 * (100% / 19));
+  }
+}
+
+/* lg 992-1199 */
+@media (min-width:992px) and (max-width: 1199px) {
+  .nav-left-wrapper, 
+  .sidebar {
     left: calc(1 * (100% / 18));
   }
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close-wrapper  {
+    right: calc(1 * (100% / 18));
+  }
 }
 
-
-@media (min-width: 992px) {
-  .nav-left-wrapper {
+/* xl 1200-1399 */
+@media (min-width:1200px) and (max-width: 1399px) {
+  .nav-left-wrapper, 
+  .sidebar {
     left: calc(1 * (100% / 11));
   }
-}
 
-@media (min-width: 1200px) {
-  .nav-left-wrapper {
-    left: calc(1 * (100% / 12));
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close-wrapper  {
+    right: calc(1 * (100% / 11));
   }
 }
 
+
+/* xxl 1400+ */
 @media (min-width: 1400px) {
-    /* .tsb-logo {
-        width: 240px;
-        height: auto;
-    } */
+  .nav-left-wrapper, 
+  .sidebar {
+    left: calc(1 * (100% / 11));
+  }
+
+  .nav-right-wrapper, 
+  .page-title-wrapper, 
+  .overlay-close-wrapper  {
+    right: calc(1 * (100% / 11));
+  }
 }
 
 
@@ -187,44 +278,8 @@ header {
 
 
   
-/* nav-right-wrapper:
-   fixed right
+/* nav-right-wrapper
 -------------------------------------------------- */
-
-@media screen and (max-width: 575px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close  {
-    right: calc(1 * (100% / 13));
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close {
-    right: calc(1 * (100% / 16));
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close  {
-    right: calc(1 * (100% / 17));
-  }
-}
-
-@media (min-width: 992px) {
-  .nav-right-wrapper, 
-  .page-title-wrapper, 
-  .overlay-close  {
-    right: calc(1 * (100% / 11));
-  }
-}
-
-
-
 
 /* logo-is: courtney aventura is svg
 -------------------------------------------------- */
