@@ -282,6 +282,12 @@ md and down
   .overlay-sidebar {
     margin-top: 83px;
   }
+
+  .overlay-footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 48px;
+  }
 }
 
 
@@ -369,17 +375,7 @@ md and down
   
   /* font size */
   @media (max-width: 991px) {
-      /* .ca-toggler, */
-      .tsb-nav-text,
-      .tsb-nav-text a,
-      .ca-nav-item,
-      .ca-dropdown-item,
-      .nav-center-wrapper-overlay,
-      /* .tsb-pagetitle, */
-      .closebtn,
-      .openbtn {
-        font-size: .65rem;
-      }
+
   }
   
   @media (min-width: 992px) {
@@ -387,11 +383,7 @@ md and down
     .tsb-nav-text,
     .tsb-nav-text a,
     .ca-nav-item,
-    .ca-dropdown-item,
-    .nav-center-wrapper-overlay,
-    .tsb-pagetitle,
-    .closebtn,
-    .openbtn {
+    .ca-dropdown-item {
       font-size: .75rem;
     }
   }
