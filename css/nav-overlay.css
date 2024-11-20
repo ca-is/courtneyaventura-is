@@ -491,7 +491,7 @@ md and down
       margin-top: 25px;
     } */
     .ca-dropdown-menu {
-      width: 250px;
+      width: auto;
       margin-bottom: 5px;
     }
   }
