@@ -257,6 +257,10 @@
     }
   
     /* so */
+    .logo-redesign {
+      width: 150%;
+    }
+    
     .logos-grid {
       max-width: 110%;
       margin: -2% -5% 0 -5%;
