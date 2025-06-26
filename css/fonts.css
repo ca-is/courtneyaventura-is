@@ -1,4 +1,25 @@
 
+ /* Africa Cliff
+ -------------------------------------------------- */
+@font-face {
+  font-family: 'Africa-Cliff';
+  src: url('fonts/Africa-Cliff.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.page-title {
+  color: #800300;
+  font-family: "Africa-Cliff", "lust-display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: right;
+  line-height: 125%;
+}
+
+
  /* Type
  -------------------------------------------------- */
  
