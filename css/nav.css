@@ -23,7 +23,9 @@ header {
 @media (max-width: 991px) {
   .nav-left-wrapper, 
   .nav-center-wrapper, 
-  .nav-right-wrapper {
+  .nav-right-wrapper, 
+  .overlay-title-wrapper,
+  .overlay-close-wrapper {
     top: 25px;
   }
 }
@@ -31,7 +33,9 @@ header {
 @media (min-width: 992px) {
   .nav-left-wrapper, 
   .nav-center-wrapper, 
-  .nav-right-wrapper  {
+  .nav-right-wrapper, 
+  .overlay-title-wrapper,
+  .overlay-close-wrapper  {
     top: 25px;
   }
 }
@@ -41,12 +45,10 @@ header {
 /* xxs 0-399 */
 @media (max-width: 399px) {
   .logo-cdot svg,
-  .logo-ca svg, 
-  .logo-is svg, 
   .logo-ca-is svg, 
   .overlay-logo-ca-is svg, 
   .overlay-ca-close svg {
-    height: 18px;
+    height: 26px !important;
     width: auto;
   }
 }
@@ -54,12 +56,10 @@ header {
 /* xs 400-575 */
 @media (min-width:400px) and (max-width: 575px) {
   .logo-cdot svg,
-  .logo-ca svg, 
-  .logo-is svg, 
   .logo-ca-is svg, 
   .overlay-logo-ca-is svg, 
   .overlay-ca-close svg {
-    height: 20px;
+    height: 20px !important;
     width: auto;
   }
 }
@@ -67,12 +67,10 @@ header {
 /* sm 767-991 */
 @media (min-width:576px) and (max-width: 767px) {
   .logo-cdot svg,
-  .logo-ca svg, 
-  .logo-is svg, 
   .logo-ca-is svg, 
   .overlay-logo-ca-is svg, 
   .overlay-ca-close svg {
-    height: 20px;
+    height: 20px !important;
     width:auto; 
   }
 }
@@ -80,10 +78,8 @@ header {
 /* md 768-991 */
 @media (min-width:768px) and (max-width: 991px) {
   .logo-cdot svg,
-  .logo-ca svg, 
-  .logo-is svg, 
   .logo-ca-is svg {
-    height: 20px;
+    height: 20px !important;
     width:auto; 
   }
 }
@@ -91,28 +87,25 @@ header {
 /* lg 992-1199 */
 @media (min-width:992px) and (max-width: 1199px) {
   .logo-cdot svg,
-  .logo-ca svg, 
-  .logo-is svg, 
   .logo-ca-is svg {
     /* height: 20px !important; */
     height: 28px !important;
     width: auto;
   }
-
+/* 
   .logo-cdot,
   .logo-ca-is {
     padding-top: 8px;
-  }
+  } */
 
 }
 
 /* xl 1200 and up */
 @media (min-width: 1200px) {
   .logo-cdot svg,
-  .logo-ca svg, 
-  .logo-is svg, 
   .logo-ca-is svg {
-    height: 22px;
+    /* height: 22px; */
+    height: 28px !important;
     width: auto;
   }
 /* 
@@ -282,24 +275,6 @@ header {
   
 /* nav-right-wrapper
 -------------------------------------------------- */
-
-/* logo-is: courtney aventura is svg
--------------------------------------------------- */
-
-/* Hide the second SVG initially */
-.logo-is svg:nth-child(2) {
-  display: none;
-}
-
-/* Show the second SVG on hover, hide the first */
-.logo-is:hover svg:nth-child(1) {
-  display: none;
-}
-
-.logo-is:hover svg:nth-child(2) {
-  display: inline;
-}
-
 
 
 /* logo-ca-is: courtney aventura is svg
