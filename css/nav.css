@@ -59,7 +59,7 @@ header {
   .logo-ca-is svg, 
   .overlay-logo-ca-is svg, 
   .overlay-ca-close svg {
-    height: 20px !important;
+    height: 26px !important;
     width: auto;
   }
 }
@@ -70,7 +70,7 @@ header {
   .logo-ca-is svg, 
   .overlay-logo-ca-is svg, 
   .overlay-ca-close svg {
-    height: 20px !important;
+    height: 26px !important;
     width:auto; 
   }
 }
@@ -78,8 +78,10 @@ header {
 /* md 768-991 */
 @media (min-width:768px) and (max-width: 991px) {
   .logo-cdot svg,
-  .logo-ca-is svg {
-    height: 20px !important;
+  .logo-ca-is svg,
+  .overlay-logo-ca-is svg, 
+  .overlay-ca-close svg {
+    height: 26px !important;
     width:auto; 
   }
 }
@@ -87,9 +89,11 @@ header {
 /* lg 992-1199 */
 @media (min-width:992px) and (max-width: 1199px) {
   .logo-cdot svg,
-  .logo-ca-is svg {
+  .logo-ca-is svg,
+  .overlay-logo-ca-is svg, 
+  .overlay-ca-close svg {
     /* height: 20px !important; */
-    height: 28px !important;
+    height: 27px !important;
     width: auto;
   }
 /* 

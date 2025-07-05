@@ -105,10 +105,13 @@
     color: #800300;
     border-bottom-color: #800300;
     text-decoration: none;
+    letter-spacing: .24em;
   }
   
   .ca-body.city {
     font-style: italic;
+    letter-spacing: .24em;
+
     /* opacity:.7; */
  
     /* font-family: "ministry","helvetica neue", sans-serif;
@@ -154,5 +157,6 @@
     font-weight: 500;
     font-style: italic !important;
     text-decoration: none;
+    letter-spacing: .23em;
   }
   

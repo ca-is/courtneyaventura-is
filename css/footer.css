@@ -16,7 +16,7 @@
 
 
 @media (max-width: 991px) {
-  .tsb-footer {
+  .ca-footer {
     margin-top: 50px;
     width: 100%;
     /* padding-left: 18px;
@@ -25,7 +25,7 @@
 }
 
 @media (min-width: 992px) {
-  .tsb-footer {
+  .ca-footer {
     padding-top: 24px;
     left: calc(1 * (100% / 14));
     right: calc(1 * (100% / 14));
