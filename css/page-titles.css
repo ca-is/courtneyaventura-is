@@ -9,41 +9,41 @@
 /* xxs 0-399 */
 @media (max-width: 399px) {
   .section-top {
-    margin-top: 60px;
-    margin-bottom: 75px;
+    margin-top: 96px;
+    /* margin-bottom: 72px; */
   }
 
   .page-title-wrapper {
-    top: 100px;
+    top: 96px;
   }
-  .page-title-2line {
+  /* .page-title-2line {
     height: 39px;
     width: auto;
   }
   .page-title-3line {
       height: 59px;
       width: auto;
-  }
+  } */
 }
 
 /* xs 400-575 */
 @media (min-width:400px) and (max-width: 575px) {
   .section-top {
-    margin-top: 64px;
-    margin-bottom: 75px;
+    margin-top: 80px;
+    /* margin-bottom: 64px; */
   }
 
   .page-title-wrapper {
     top: 80px;
   }
-  .page-title-2line {
+  /* .page-title-2line {
     height: 43.25px;
     width: auto;
   }
   .page-title-3line {
       height: 65.5px;
       width: auto;
-  }
+  } */
 }
 
 
