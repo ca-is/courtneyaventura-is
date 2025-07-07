@@ -45,7 +45,7 @@ md and down
 /* Open state */
 #navOverlay.open {
   /* opacity: 1; */
-  opacity: .99;
+  opacity: 1;
   transform: translateX(0); /* Fully visible position */
 }
 
