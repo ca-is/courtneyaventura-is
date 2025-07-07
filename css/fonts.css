@@ -121,7 +121,7 @@ h2 a.active {
   
   .ca-body.city {
     font-style: italic;
-    letter-spacing: .23em;
+    /* letter-spacing: .2em; */
 
     /* opacity:.7; */
  
